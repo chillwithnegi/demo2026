@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -19,7 +18,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-14 md:h-16 lg:h-20 px-4 md:px-6">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src={logo} alt="Wealth X Multiplier" className="h-8 md:h-10 lg:h-12 w-auto" />
+            <img 
+              src="/images/logo.webp" 
+              alt="Wealth X Multiplier" 
+              width="96"
+              height="56"
+              className="h-8 md:h-10 lg:h-12 w-auto"
+              fetchPriority="high"
+            />
           </a>
 
           {/* Desktop Navigation */}
