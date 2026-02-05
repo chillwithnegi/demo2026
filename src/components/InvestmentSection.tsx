@@ -5,20 +5,20 @@ import hospitalityImg from "@/assets/hospitality.jpg";
 const investmentTypes = [
   {
     image: residentialImg,
-    title: "Residential",
-    description: "Luxury apartments, villas, and gated communities designed for premium living experiences.",
+    title: "Residential Excellence",
+    description: "Premium developments that command premium prices and generate superior returns through strategic location selection and superior design.",
     placeholder: "Residential visual",
   },
   {
     image: commercialImg,
-    title: "Commercial",
-    description: "Grade A office spaces, retail centers, and mixed-use developments for optimal returns.",
+    title: "Commercial Growth",
+    description: "Office and retail spaces positioned in emerging corridors that appreciate significantly as infrastructure develops and demand increases.",
     placeholder: "Commercial visual",
   },
   {
     image: hospitalityImg,
-    title: "Hospitality",
-    description: "Hotels, resorts, and serviced apartments catering to the discerning traveler.",
+    title: "Hospitality Returns",
+    description: "High-end hospitality projects that capitalize on tourism growth and lifestyle trends, delivering consistent revenue streams and capital appreciation.",
     placeholder: "Hospitality visual",
   },
 ];
@@ -28,23 +28,17 @@ export default function InvestmentSection() {
     <section className="section-padding bg-background">
       <div className="container-luxury">
         <div className="text-center mb-16">
-          <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-            Asset Classes
-          </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             From Investment to Wealth
           </h2>
           <div className="divider-gold mb-6" />
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Strategic investments across premium real estate segments
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {investmentTypes.map((type, index) => (
             <div
               key={index}
-              className="group relative rounded-lg overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500"
+              className="group relative rounded-lg overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 border border-border"
             >
               <div className="aspect-[4/3]">
                 <img
@@ -54,7 +48,7 @@ export default function InvestmentSection() {
                 />
               </div>
               <div className="p-6 bg-card">
-                <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-2">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
                   {type.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
