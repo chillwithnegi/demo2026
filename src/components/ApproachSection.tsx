@@ -1,4 +1,5 @@
 import { MapPin, Search, HardHat, CheckCircle } from "lucide-react";
+import sixStepProcess from "@/assets/six-step-process.png";
 
 const approachSteps = [
   {
@@ -39,6 +40,17 @@ export default function ApproachSection() {
             Our systematic methodology transforms land into landmark properties through carefully 
             orchestrated steps that maximize returns at every stage.
           </p>
+        </div>
+
+        {/* Six Step Process Infographic - Prominently Displayed */}
+        <div className="mb-20">
+          <div className="rounded-lg overflow-hidden shadow-card border border-border">
+            <img 
+              src={sixStepProcess} 
+              alt="The Six-Step Process for Strategic Market Development" 
+              className="w-full h-auto object-contain bg-white"
+            />
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

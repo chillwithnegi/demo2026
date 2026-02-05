@@ -1,25 +1,23 @@
-import luxuryConstruction1 from "@/assets/luxury-construction-1.jpg";
-import luxuryConstruction2 from "@/assets/luxury-construction-2.jpg";
-import luxuryConstruction3 from "@/assets/luxury-construction-3.jpg";
+import luxuryVillaPool from "@/assets/luxury-villa-pool.png";
+import waterfallBar from "@/assets/waterfall-bar.png";
+import futureCity from "@/assets/future-city.png";
+import commercialAtrium from "@/assets/commercial-atrium.png";
 
 const journeyItems = [
   {
-    image: luxuryConstruction1,
+    image: luxuryVillaPool,
     title: "Premium Structures",
     description: "High-end residential and commercial construction with uncompromising quality and attention to detail.",
-    placeholder: "Journey Luxury Construction Image 1",
   },
   {
-    image: luxuryConstruction2,
+    image: waterfallBar,
     title: "Signature Landscapes",
     description: "Golf courses, landscaped communities, and world-class amenities that define luxury living.",
-    placeholder: "Journey Luxury Construction Image 2",
   },
   {
-    image: luxuryConstruction3,
+    image: futureCity, // Or commercialAtrium depending on preference, futureCity fits "Iconic Towers" scale better
     title: "Iconic Towers",
     description: "Landmark high-rise developments that reshape skylines and set new benchmarks in luxury.",
-    placeholder: "Journey Luxury Construction Image 3",
   },
 ];
 
@@ -48,7 +46,7 @@ export default function JourneySection() {
             >
               <img
                 src={item.image}
-                alt={item.placeholder}
+                alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />

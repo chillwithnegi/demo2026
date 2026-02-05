@@ -1,5 +1,6 @@
 import { MapPin, Building, Users, TrendingUp } from "lucide-react";
 import cityWireframe from "@/assets/city-wireframe.png";
+import cityWireframeDark from "@/assets/city-wireframe-dark.png";
 import worldGlobe from "@/assets/world-globe.png";
 import worldMap from "@/assets/world-map.png";
 import indiaMap from "@/assets/india-map.png";
@@ -33,7 +34,7 @@ const marketTiles = [
   { label: "Country", image: worldMap },
   { label: "City", image: indiaMap },
   { label: "Micro Market", image: cityWireframe },
-  { label: "Exact Property", image: cityWireframe },
+  { label: "Exact Property", image: cityWireframeDark },
 ];
 
 export default function PrecisionSection() {
