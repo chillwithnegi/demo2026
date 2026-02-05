@@ -1,4 +1,3 @@
-import logo from "@/assets/logo.png";
 import { MapPin, Phone, Mail, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const footerLinks = [
@@ -20,9 +19,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <img
-              src={logo}
+              src="/images/logo.webp"
               alt="Wealth X Multiplier"
+              width="160"
+              height="94"
               className="h-14 md:h-16 lg:h-20 w-auto mb-6 md:mb-8"
+              loading="lazy"
+              decoding="async"
             />
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-md mb-6 md:mb-8">
               Transforming premium real estate through strategic construction and 

@@ -1,20 +1,16 @@
-import luxuryVillaPool from "@/assets/luxury-villa-pool.png";
-import waterfallBar from "@/assets/waterfall-bar.png";
-import futureCity from "@/assets/future-city.png";
-
 const journeyItems = [
   {
-    image: luxuryVillaPool,
+    image: "/images/luxury-villa-pool.webp",
     title: "Premium Structures",
     description: "High-end residential and commercial construction with uncompromising quality.",
   },
   {
-    image: waterfallBar,
+    image: "/images/waterfall-bar.webp",
     title: "Signature Landscapes",
     description: "Golf courses, landscaped communities, and world-class amenities.",
   },
   {
-    image: futureCity,
+    image: "/images/future-city.webp",
     title: "Iconic Towers",
     description: "Landmark high-rise developments that reshape skylines.",
   },
@@ -46,6 +42,8 @@ export default function JourneySection() {
               <img
                 src={item.image}
                 alt={item.title}
+                width="380"
+                height="475"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 decoding="async"

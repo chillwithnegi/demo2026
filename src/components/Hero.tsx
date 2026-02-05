@@ -38,8 +38,10 @@ export default function Hero() {
           <div className="relative animate-fade-in order-first lg:order-last">
             <div className="aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-elegant">
               <img
-                src="/images/hero-skyline.png"
+                src="/images/hero-skyline.webp"
                 alt="Premium Real Estate Skyline"
+                width="665"
+                height="887"
                 className="w-full h-full object-cover"
                 loading="eager"
                 decoding="async"

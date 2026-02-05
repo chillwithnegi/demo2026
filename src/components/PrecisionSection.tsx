@@ -1,6 +1,5 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
 import cityWireframe from "@/assets/city-wireframe.png";
-import cityWireframeDark from "@/assets/city-wireframe-dark.png";
 import worldGlobe from "@/assets/world-globe.png";
 import worldMap from "@/assets/world-map.png";
 import indiaMap from "@/assets/india-map.png";
@@ -33,7 +32,7 @@ const marketTiles = [
   { label: "Country", image: worldMap },
   { label: "City", image: indiaMap },
   { label: "Micro Market", image: cityWireframe },
-  { label: "Exact Property", image: cityWireframeDark },
+  { label: "Exact Property", image: "/images/city-wireframe-dark.webp" },
 ];
 
 export default function PrecisionSection() {
@@ -44,7 +43,15 @@ export default function PrecisionSection() {
       
       {/* Subtle Background Texture */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-        <img src={cityWireframeDark} alt="" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+        <img 
+          src="/images/city-wireframe-dark.webp" 
+          alt="" 
+          width="1024"
+          height="1024"
+          className="w-full h-full object-cover" 
+          loading="lazy" 
+          decoding="async" 
+        />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -95,6 +102,8 @@ export default function PrecisionSection() {
                   <img 
                     src={tile.image} 
                     alt={tile.label}
+                    width="192"
+                    height="192"
                     className="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-all duration-500 scale-110 group-hover:scale-100 grayscale group-hover:grayscale-0"
                     loading="lazy"
                     decoding="async"
@@ -124,6 +133,8 @@ export default function PrecisionSection() {
                   <img 
                     src={tile.image} 
                     alt={tile.label}
+                    width="380"
+                    height="285"
                     className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
                     loading="lazy"
                     decoding="async"
