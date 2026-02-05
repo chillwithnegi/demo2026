@@ -25,7 +25,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="section-padding bg-background">
+    <section id="services" className="section-padding bg-card">
       <div className="container-luxury">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -41,9 +41,9 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="card-luxury group"
+              className="bg-background p-8 rounded-lg border border-border hover:border-gold/50 transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+              <div className="w-16 h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
                 <service.icon className="w-8 h-8 text-gold" />
               </div>
               <h3 className="font-serif text-lg md:text-xl font-bold text-foreground mb-3">

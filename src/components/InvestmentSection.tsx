@@ -1,25 +1,20 @@
-import residentialImg from "@/assets/residential.jpg";
-import commercialImg from "@/assets/commercial.jpg";
-import hospitalityImg from "@/assets/hospitality.jpg";
+import { Home, Building2, Hotel } from "lucide-react";
 
 const investmentTypes = [
   {
-    image: residentialImg,
+    icon: Home,
     title: "Residential Excellence",
     description: "Premium developments that command premium prices and generate superior returns through strategic location selection and superior design.",
-    placeholder: "Residential visual",
   },
   {
-    image: commercialImg,
+    icon: Building2,
     title: "Commercial Growth",
     description: "Office and retail spaces positioned in emerging corridors that appreciate significantly as infrastructure develops and demand increases.",
-    placeholder: "Commercial visual",
   },
   {
-    image: hospitalityImg,
+    icon: Hotel,
     title: "Hospitality Returns",
     description: "High-end hospitality projects that capitalize on tourism growth and lifestyle trends, delivering consistent revenue streams and capital appreciation.",
-    placeholder: "Hospitality visual",
   },
 ];
 
@@ -38,23 +33,17 @@ export default function InvestmentSection() {
           {investmentTypes.map((type, index) => (
             <div
               key={index}
-              className="group relative rounded-lg overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 border border-border"
+              className="bg-card p-8 rounded-lg border border-border hover:border-gold/50 transition-all duration-300"
             >
-              <div className="aspect-[4/3]">
-                <img
-                  src={type.image}
-                  alt={type.placeholder}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+              <div className="w-16 h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
+                <type.icon className="w-8 h-8 text-gold" />
               </div>
-              <div className="p-6 bg-card">
-                <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-3">
-                  {type.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {type.description}
-                </p>
-              </div>
+              <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">
+                {type.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {type.description}
+              </p>
             </div>
           ))}
         </div>

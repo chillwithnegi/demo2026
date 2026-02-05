@@ -1,8 +1,8 @@
-import { MapPin, Globe, Rocket } from "lucide-react";
+import { MapPin, Globe } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section id="contact" className="section-padding bg-card">
+    <section id="contact" className="section-padding bg-background">
       <div className="container-luxury">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
@@ -22,17 +22,13 @@ export default function CTASection() {
 
           {/* Info Tags */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
               <MapPin className="w-4 h-4 text-gold" />
               <span className="text-sm font-medium text-foreground">Based in Delhi NCR</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
               <Globe className="w-4 h-4 text-gold" />
               <span className="text-sm font-medium text-foreground">Global Perspective</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border">
-              <Rocket className="w-4 h-4 text-gold" />
-              <span className="text-sm font-medium text-foreground">Ready to Transform</span>
             </div>
           </div>
 
