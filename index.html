@@ -3,20 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Wealth X Multiplier</title>
+    <meta name="description" content="Premium Real Estate Investment & Wealth Creation" />
+    <meta name="author" content="Wealth X Multiplier" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Wealth X Multiplier" />
+    <meta property="og:description" content="Premium Real Estate Investment & Wealth Creation" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:site" content="@WealthXMultiplier" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <script>
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+
+      // Disable keyboard shortcuts for inspect/dev tools
+      document.addEventListener('keydown', function(e) {
+        // F12
+        if (e.key === 'F12') {
+          e.preventDefault();
+        }
+        // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (Dev Tools)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) {
+          e.preventDefault();
+        }
+        // Ctrl+U (View Source)
+        if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+          e.preventDefault();
+        }
+        // Cmd+Option+I (Mac Dev Tools)
+        if (e.metaKey && e.altKey && (e.key === 'I' || e.key === 'i')) {
+          e.preventDefault();
+        }
+        // Cmd+Option+J (Mac Console)
+        if (e.metaKey && e.altKey && (e.key === 'J' || e.key === 'j')) {
+          e.preventDefault();
+        }
+        // Cmd+Option+U (Mac View Source)
+        if (e.metaKey && e.altKey && (e.key === 'U' || e.key === 'u')) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </head>
 
   <body>
