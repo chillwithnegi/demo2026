@@ -1,18 +1,20 @@
-import { Home, Building2, Hotel } from "lucide-react";
+import residentialAerial from "@/assets/residential-aerial.png";
+import luxuryInterior from "@/assets/luxury-interior.png";
+import wealthJourney from "@/assets/wealth-journey.png";
 
-const investmentTypes = [
+const investments = [
   {
-    icon: Home,
+    image: residentialAerial,
     title: "Residential Excellence",
     description: "Premium developments that command premium prices and generate superior returns through strategic location selection and superior design.",
   },
   {
-    icon: Building2,
+    image: luxuryInterior,
     title: "Commercial Growth",
     description: "Office and retail spaces positioned in emerging corridors that appreciate significantly as infrastructure develops and demand increases.",
   },
   {
-    icon: Hotel,
+    image: wealthJourney,
     title: "Hospitality Returns",
     description: "High-end hospitality projects that capitalize on tourism growth and lifestyle trends, delivering consistent revenue streams and capital appreciation.",
   },
@@ -23,6 +25,9 @@ export default function InvestmentSection() {
     <section className="section-padding bg-background">
       <div className="container-luxury">
         <div className="text-center mb-16">
+          <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4">
+            Investment Types
+          </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             From Investment to Wealth
           </h2>
@@ -30,20 +35,27 @@ export default function InvestmentSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-          {investmentTypes.map((type, index) => (
+          {investments.map((item, index) => (
             <div
               key={index}
-              className="bg-card p-8 rounded-lg border border-border hover:border-gold/50 transition-all duration-300"
+              className="group relative overflow-hidden rounded-lg shadow-card hover:shadow-elegant transition-all duration-500"
             >
-              <div className="w-16 h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
-                <type.icon className="w-8 h-8 text-gold" />
+              <div className="aspect-[4/5]">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">
-                {type.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {type.description}
-              </p>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-90" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
+                <h3 className="font-serif text-xl md:text-2xl font-bold mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
