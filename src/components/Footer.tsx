@@ -22,7 +22,7 @@ export default function Footer() {
             <img
               src={logo}
               alt="Wealth X Multiplier"
-              className="h-14 md:h-16 lg:h-20 w-auto mb-6 md:mb-8 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+              className="h-14 md:h-16 lg:h-20 w-auto mb-6 md:mb-8"
             />
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-md mb-6 md:mb-8">
               Transforming premium real estate through strategic construction and 
