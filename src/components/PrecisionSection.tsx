@@ -44,7 +44,7 @@ export default function PrecisionSection() {
       
       {/* Subtle Background Texture */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-        <img src={cityWireframeDark} alt="" className="w-full h-full object-cover" />
+        <img src={cityWireframeDark} alt="" className="w-full h-full object-cover" loading="lazy" decoding="async" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -96,6 +96,8 @@ export default function PrecisionSection() {
                     src={tile.image} 
                     alt={tile.label}
                     className="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-all duration-500 scale-110 group-hover:scale-100 grayscale group-hover:grayscale-0"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
@@ -123,6 +125,8 @@ export default function PrecisionSection() {
                     src={tile.image} 
                     alt={tile.label}
                     className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity" />
                   <div className="absolute inset-0 flex items-center justify-center">

@@ -31,6 +31,8 @@ export default function ExpertiseSection() {
               src={delhiNcrMap}
               alt="Delhi NCR Infrastructure Map"
               className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -77,6 +79,8 @@ export default function ExpertiseSection() {
                 src={businessMeeting}
                 alt="Strategic Business Planning"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>
@@ -119,6 +123,8 @@ export default function ExpertiseSection() {
                 src={investingLand}
                 alt="Investing in Land"
                 className="w-full h-auto object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

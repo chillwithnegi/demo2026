@@ -43,6 +43,9 @@ export default function Hero() {
                 src={heroImage}
                 alt="Premium Real Estate Skyline"
                 className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
               />
             </div>
           </div>

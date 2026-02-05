@@ -12,6 +12,8 @@ export default function VisionSection() {
                 src={founderPortrait}
                 alt="Where Vision Meets Precision Portrait"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
             </div>
