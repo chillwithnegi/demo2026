@@ -48,23 +48,23 @@ const wealthStrategies = [
 
 export default function PhilosophySection() {
   return (
-    <section id="philosophy" className="section-padding bg-background">
-      <div className="container-luxury">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4">
+    <section id="philosophy" className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
             Our Approach
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
             Our Core Philosophy
           </h2>
-          <div className="divider-gold mb-6" />
-          <p className="text-xl md:text-2xl font-serif text-foreground/80 max-w-2xl mx-auto">
+          <div className="divider-gold mb-4 md:mb-6" />
+          <p className="text-lg md:text-xl lg:text-2xl font-serif text-foreground/80 max-w-2xl mx-auto">
             <span className="text-gold">Land</span> + <span className="text-gold">Money</span> + <span className="text-gold">Strategy</span> = Real Estate Success
           </p>
         </div>
 
         {/* Core Portfolio Image */}
-        <div className="mb-16">
+        <div className="mb-10 md:mb-16">
           <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-card">
             <img
               src={corePortfolio}
@@ -74,22 +74,22 @@ export default function PhilosophySection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-10 md:mb-16">
           {philosophyItems.map((item, index) => (
             <div
               key={index}
               className="card-luxury text-center group"
             >
-              <div className="w-16 h-16 rounded-full bg-gold flex items-center justify-center mx-auto mb-6">
-                <span className="font-serif text-2xl font-bold text-primary-foreground">{item.number}</span>
+              <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-gold flex items-center justify-center mx-auto mb-4 md:mb-6">
+                <span className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-foreground">{item.number}</span>
               </div>
-              <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-2">
+              <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
                 {item.subtitle}
               </p>
-              <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-3 md:mb-4">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -97,32 +97,34 @@ export default function PhilosophySection() {
         </div>
 
         {/* Value Proposition */}
-        <div className="max-w-4xl mx-auto p-8 md:p-12 rounded-lg bg-muted border border-border mb-16">
-          <h3 className="text-center font-serif text-2xl font-bold text-foreground mb-4">
+        <div className="max-w-4xl mx-auto p-6 md:p-8 lg:p-12 rounded-lg bg-muted border border-border mb-10 md:mb-16">
+          <h3 className="text-center font-serif text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
             Land + Money + Strategy
           </h3>
-          <p className="text-center text-lg md:text-xl text-foreground leading-relaxed">
-            We're not brokers. We're <span className="font-serif font-bold text-gold">wealth creators</span> who execute strategic plans that transform real estate into generational prosperity. Our approach combines market intelligence with flawless execution to deliver exceptional returns.
+          <p className="text-center text-base md:text-lg lg:text-xl text-foreground leading-relaxed">
+            We're not brokers. We're <span className="font-serif font-bold text-gold">wealth creators</span> who execute strategic plans that transform real estate into generational prosperity.
           </p>
         </div>
 
         {/* Wealth Strategies */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {wealthStrategies.map((item, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-card border border-border hover:border-gold/50 transition-all duration-300"
+              className="p-4 md:p-6 rounded-lg bg-card border border-border hover:border-gold/50 transition-all duration-300"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                  <item.icon className="w-6 h-6 text-gold" />
+              <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-5 h-5 md:w-6 md:h-6 text-gold" />
                 </div>
-                <span className="text-gold font-bold text-lg">{item.number}.</span>
-                <h4 className="font-serif text-lg font-bold text-foreground">
-                  {item.title}
-                </h4>
+                <div className="flex items-center gap-2">
+                  <span className="text-gold font-bold text-base md:text-lg">{item.number}.</span>
+                  <h4 className="font-serif text-base md:text-lg font-bold text-foreground">
+                    {item.title}
+                  </h4>
+                </div>
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                 {item.description}
               </p>
             </div>
