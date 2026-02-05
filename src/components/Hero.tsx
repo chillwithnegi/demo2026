@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-skyline.jpg";
+import heroImage from "@/assets/hero-skyline.png";
 
 export default function Hero() {
   return (
@@ -38,10 +38,10 @@ export default function Hero() {
 
           {/* Image - Right Side */}
           <div className="relative animate-fade-in">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-elegant">
+            <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-elegant">
               <img
                 src={heroImage}
-                alt="Hero Image / Real Estate Skyline"
+                alt="Premium Real Estate Skyline"
                 className="w-full h-full object-cover"
               />
             </div>
