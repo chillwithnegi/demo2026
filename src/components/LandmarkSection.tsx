@@ -55,6 +55,8 @@ export default function LandmarkSection() {
                       src={step.image} 
                       alt={step.title} 
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center shadow-lg">
                       <span className="font-serif text-xl font-bold text-primary-foreground">

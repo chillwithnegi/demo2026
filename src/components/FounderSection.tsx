@@ -56,6 +56,8 @@ export default function FounderSection() {
                 src={founderVisionSilhouette}
                 alt="Founder Vision & Expertise"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
             </div>

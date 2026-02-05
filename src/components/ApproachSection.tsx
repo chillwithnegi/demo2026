@@ -48,6 +48,8 @@ export default function ApproachSection() {
               src={sixStepProcess} 
               alt="The Six-Step Process for Strategic Market Development" 
               className="w-full h-auto object-contain bg-white"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

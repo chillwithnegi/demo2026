@@ -70,6 +70,8 @@ export default function PhilosophySection() {
               src={corePortfolio}
               alt="The Investor Core Portfolio"
               className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

@@ -52,6 +52,8 @@ export default function SolutionsSection() {
                 src={globalStrategyIdea}
                 alt="Global Strategic Vision"
                 className="w-full h-auto object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
             </div>
