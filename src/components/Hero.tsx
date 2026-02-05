@@ -1,5 +1,3 @@
-import heroImage from "@/assets/hero-skyline.png";
-
 export default function Hero() {
   return (
     <section className="min-h-screen bg-background pt-16 md:pt-20">
@@ -40,7 +38,7 @@ export default function Hero() {
           <div className="relative animate-fade-in order-first lg:order-last">
             <div className="aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-elegant">
               <img
-                src={heroImage}
+                src="/images/hero-skyline.png"
                 alt="Premium Real Estate Skyline"
                 className="w-full h-full object-cover"
                 loading="eager"
