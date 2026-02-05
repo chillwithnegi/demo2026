@@ -1,34 +1,39 @@
-import { MapPin, Building, Users, TrendingUp, Target } from "lucide-react";
+import { MapPin, Building, Users, TrendingUp } from "lucide-react";
+import cityWireframe from "@/assets/city-wireframe.png";
+import worldGlobe from "@/assets/world-globe.png";
+import worldMap from "@/assets/world-map.png";
+import indiaMap from "@/assets/india-map.png";
+import arrowDown from "@/assets/arrow-down.png";
 
 const precisionPoints = [
   {
     icon: MapPin,
     title: "Right Location",
-    description: "Choosing the right location with growth potential",
+    description: "Choosing the right location at the right time",
   },
   {
     icon: Building,
     title: "Right Product",
-    description: "Developing the right product for market demand",
+    description: "Developing the right product for the right market",
   },
   {
     icon: Users,
     title: "Right End-User",
-    description: "Targeting the right end-user demographics",
+    description: "Targeting the right end-user or investor segment",
   },
   {
     icon: TrendingUp,
     title: "Infrastructure Growth",
-    description: "Aligning infrastructure-led growth patterns",
+    description: "Aligning infrastructure-led growth opportunities",
   },
 ];
 
 const marketTiles = [
-  { label: "World", placeholder: "World tile placeholder" },
-  { label: "Country", placeholder: "Country tile placeholder" },
-  { label: "City", placeholder: "City tile placeholder" },
-  { label: "Micro Market", placeholder: "Micro Market tile placeholder" },
-  { label: "Exact Property", placeholder: "Exact Property tile placeholder" },
+  { label: "World", image: worldGlobe },
+  { label: "Country", image: worldMap },
+  { label: "City", image: indiaMap },
+  { label: "Micro Market", image: cityWireframe },
+  { label: "Exact Property", image: cityWireframe },
 ];
 
 export default function PrecisionSection() {
@@ -39,10 +44,13 @@ export default function PrecisionSection() {
           <p className="text-gold-light text-sm font-semibold tracking-[0.2em] uppercase mb-4">
             Strategic Approach
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Real Estate Success Demands Precision
+          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+            Land + Money ≠ Guaranteed Success
           </h2>
           <div className="h-px w-24 mx-auto bg-gold mb-6" />
+          <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
+            Real Estate Success Demands Precision
+          </h3>
         </div>
 
         {/* Precision Points */}
@@ -65,30 +73,30 @@ export default function PrecisionSection() {
           ))}
         </div>
 
-        {/* Market Analysis Tiles */}
-        <div className="text-center mb-8">
-          <h3 className="font-serif text-2xl md:text-3xl font-semibold mb-2">
-            Market Analysis Framework
-          </h3>
-          <p className="text-primary-foreground/70">
-            From global perspective to hyper-local precision
-          </p>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-4">
+        {/* Market Analysis Tiles with Arrows */}
+        <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
           {marketTiles.map((tile, index) => (
-            <div
-              key={index}
-              className="group relative w-36 h-36 md:w-44 md:h-44 rounded-lg overflow-hidden border border-gold/30 hover:border-gold transition-all duration-300"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-primary-foreground/5" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <Target className="w-8 h-8 text-gold-light mb-2 group-hover:scale-110 transition-transform" />
-                <p className="font-semibold text-sm md:text-base">{tile.label}</p>
-                <p className="text-[10px] text-primary-foreground/50 mt-1">
-                  {tile.placeholder}
-                </p>
+            <div key={index} className="flex items-center">
+              <div
+                className="group relative w-28 h-28 md:w-40 md:h-40 rounded-lg overflow-hidden border border-gold/30 hover:border-gold transition-all duration-300"
+              >
+                <img 
+                  src={tile.image} 
+                  alt={tile.label}
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="font-semibold text-sm md:text-base text-center px-2">{tile.label}</p>
+                </div>
               </div>
+              {index < marketTiles.length - 1 && (
+                <img 
+                  src={arrowDown} 
+                  alt="Arrow" 
+                  className="w-6 h-6 md:w-8 md:h-8 mx-1 md:mx-2 rotate-[-90deg]"
+                />
+              )}
             </div>
           ))}
         </div>
