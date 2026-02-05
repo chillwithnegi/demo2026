@@ -6,35 +6,35 @@ const investments = [
   {
     image: residentialAerial,
     title: "Residential Excellence",
-    description: "Premium developments that command premium prices and generate superior returns through strategic location selection and superior design.",
+    description: "Premium developments that command premium prices and generate superior returns.",
   },
   {
     image: luxuryInterior,
     title: "Commercial Growth",
-    description: "Office and retail spaces positioned in emerging corridors that appreciate significantly as infrastructure develops and demand increases.",
+    description: "Office and retail spaces positioned in emerging corridors for appreciation.",
   },
   {
     image: wealthJourney,
     title: "Hospitality Returns",
-    description: "High-end hospitality projects that capitalize on tourism growth and lifestyle trends, delivering consistent revenue streams and capital appreciation.",
+    description: "High-end hospitality projects with consistent revenue streams.",
   },
 ];
 
 export default function InvestmentSection() {
   return (
-    <section className="section-padding bg-background">
-      <div className="container-luxury">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4">
+    <section className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
             Investment Types
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
             From Investment to Wealth
           </h2>
-          <div className="divider-gold mb-6" />
+          <div className="divider-gold mb-4 md:mb-6" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {investments.map((item, index) => (
             <div
               key={index}
@@ -48,11 +48,11 @@ export default function InvestmentSection() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-90" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
-                <h3 className="font-serif text-xl md:text-2xl font-bold mb-3">
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-primary-foreground">
+                <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3">
                   {item.title}
                 </h3>
-                <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                <p className="text-primary-foreground/80 text-xs md:text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
