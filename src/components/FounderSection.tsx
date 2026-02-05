@@ -1,4 +1,4 @@
-import founderPortrait from "@/assets/founder-portrait.jpg";
+import founderVisionSilhouette from "@/assets/founder-vision-silhouette.jpg";
 import { Award, GraduationCap, Briefcase, Globe } from "lucide-react";
 
 const credentials = [
@@ -51,13 +51,13 @@ export default function FounderSection() {
 
           {/* Image */}
           <div className="relative">
-            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-gold/20 shadow-elegant">
               <img
-                src={founderPortrait}
-                alt="Founder Expertise Portrait"
+                src={founderVisionSilhouette}
+                alt="Founder Vision & Expertise"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
             </div>
             {/* Decorative */}
             <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-gold/30 rounded-lg -z-10" />
