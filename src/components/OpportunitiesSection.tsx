@@ -1,23 +1,26 @@
 import { Building2, TrendingUp, Handshake } from "lucide-react";
+import wealthMultiplierBuilding from "@/assets/wealth-multiplier-building.png";
+import constructionSite from "@/assets/construction-site.png";
+import businessMeeting from "@/assets/business-meeting.jpg";
 
 const opportunities = [
   {
     icon: Building2,
     title: "Development Projects",
     description: "Ground-up development opportunities in prime locations with strong appreciation potential.",
-    placeholder: "Investment Opportunity visual 1",
+    image: wealthMultiplierBuilding,
   },
   {
     icon: TrendingUp,
     title: "Value Add Assets",
     description: "Repositioning and renovation opportunities to unlock hidden value in existing properties.",
-    placeholder: "Investment Opportunity visual 2",
+    image: constructionSite,
   },
   {
     icon: Handshake,
     title: "Joint Ventures",
     description: "Strategic partnerships for large-scale developments with shared risk and rewards.",
-    placeholder: "Investment Opportunity visual 3",
+    image: businessMeeting,
   },
 ];
 
@@ -39,20 +42,30 @@ export default function OpportunitiesSection() {
           {opportunities.map((item, index) => (
             <div
               key={index}
-              className="card-luxury group text-center"
+              className="card-luxury group text-center overflow-hidden p-0"
             >
-              <div className="w-20 h-20 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
-                <item.icon className="w-10 h-10 text-gold" />
+              {/* Image Header */}
+              <div className="relative h-48 w-full overflow-hidden">
+                <img 
+                  src={item.image} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center backdrop-blur-sm">
+                    <item.icon className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                </div>
               </div>
-              <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">
-                {item.title}
-              </h3>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4">
-                {item.description}
-              </p>
-              <p className="text-xs text-muted-foreground/50">
-                [{item.placeholder}]
-              </p>
+              
+              <div className="p-6 md:p-8">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
