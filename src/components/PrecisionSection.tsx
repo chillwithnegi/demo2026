@@ -1,6 +1,6 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import strategicAnalysis from "@/assets/strategic-analysis.png";
+import StrategicDashboard from "@/components/StrategicDashboard";
 import worldGlobeColorful from "@/assets/world-globe-colorful.png";
 import worldMapColorful from "@/assets/world-map-colorful.png";
 import indiaMapColorful from "@/assets/india-map-colorful.png";
@@ -60,14 +60,7 @@ export default function PrecisionSection() {
 
         {/* Strategic Analysis Infographic */}
         <div className="mb-16 md:mb-20">
-          <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20">
-            <ClickableImage 
-              src={strategicAnalysis} 
-              alt="Strategic Real Estate Market Analysis Dashboard" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <p className="text-center text-muted-foreground text-sm mt-3">Click image to enlarge</p>
+          <StrategicDashboard />
         </div>
 
         {/* Precision Points */}
