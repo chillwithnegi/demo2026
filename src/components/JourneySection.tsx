@@ -40,7 +40,7 @@ export default function JourneySection() {
               key={index}
               className="group relative rounded-xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 bg-card border border-border"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden bg-background">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -48,7 +48,7 @@ export default function JourneySection() {
                   height="450"
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${index === 0 ? 'object-contain' : 'object-cover'}`}
                 />
               </div>
               <div className="p-4 md:p-6">
