@@ -3,7 +3,7 @@ import { ClickableImage } from "@/components/ui/image-lightbox";
 import landAcquisition from "@/assets/land-acquisition.png";
 import developmentPlanning from "@/assets/smart-city-vision.png";
 import constructionSite from "@/assets/construction-site.png";
-import smartCityVision from "@/assets/smart-city-vision.png";
+import completionCity from "@/assets/completion-city.png";
 
 const processSteps = [
   { 
@@ -35,7 +35,7 @@ const processSteps = [
     title: "Completion", 
     subtitle: "Iconic Delivery",
     description: "Transforming vision into landmark properties that define city skylines and set new benchmarks",
-    image: smartCityVision,
+    image: completionCity,
     highlight: "Landmark Creation"
   },
 ];
