@@ -3,10 +3,10 @@ import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
 import { Award, GraduationCap, Briefcase, Globe } from "lucide-react";
 
 const credentials = [
-  { icon: GraduationCap, text: "Civil Engineering Background" },
-  { icon: Award, text: "MBA - Real Estate & Urban Infrastructure (RICS)" },
-  { icon: Briefcase, text: "Hands-on Luxury Construction Experience" },
-  { icon: Globe, text: "Global Investment & Development Strategy" },
+  { icon: GraduationCap, text: "Civil Engineering — The Foundation of My Passion" },
+  { icon: Award, text: "MBA (RICS) — Where Knowledge Met Ambition" },
+  { icon: Briefcase, text: "Hands-on Construction — Where I Found My Calling" },
+  { icon: Globe, text: "Global Vision — Where Dreams Have No Borders" },
 ];
 
 export default function FounderSection() {
@@ -15,10 +15,10 @@ export default function FounderSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <p className="text-gold-light text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Leadership
+            👤 The Heart Behind It All
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4">
-            Why Work With Me
+            This Is Personal
           </h2>
           <div className="h-px w-24 mx-auto bg-gold mb-4 md:mb-6" />
         </div>
@@ -27,12 +27,12 @@ export default function FounderSection() {
           {/* Content */}
           <div>
             <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
-              Founder Expertise
+              My Story, My Purpose
             </h3>
             <p className="text-primary-foreground/80 text-sm md:text-base lg:text-lg leading-relaxed mb-6 md:mb-8">
-              A unique combination of technical construction knowledge and strategic 
-              investment acumen. I bridge the gap between on-ground execution and 
-              high-level strategy to deliver exceptional results.
+              Every project I touch carries a piece of my soul. From the first blueprint to the final 
+              handover, I'm not just managing — I'm living, breathing, and feeling every moment of the journey. 
+              This isn't a career. It's a calling.
             </p>
 
             <div className="space-y-3 md:space-y-4">
@@ -55,7 +55,7 @@ export default function FounderSection() {
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-gold/20 shadow-elegant">
               <img
                 src={visionPortrait}
-                alt="Founder Vision & Expertise"
+                alt="The Person Behind The Vision"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -71,7 +71,7 @@ export default function FounderSection() {
         <div className="rounded-lg overflow-hidden shadow-elegant border border-gold/20">
           <img
             src={executionStrategyVisual}
-            alt="Execution Strategy Framework"
+            alt="How I Execute With Passion"
             className="w-full h-auto object-cover"
             loading="lazy"
             decoding="async"

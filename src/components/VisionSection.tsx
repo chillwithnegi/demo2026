@@ -10,7 +10,7 @@ export default function VisionSection() {
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-card">
               <img
                 src={founderPortrait}
-                alt="Where Vision Meets Precision Portrait"
+                alt="The Beginning of a Dream"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -25,7 +25,7 @@ export default function VisionSection() {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-              About the Founder
+              🔥 Where It All Began
             </p>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight whitespace-nowrap">
               Where Vision Meets Precision
@@ -43,8 +43,8 @@ export default function VisionSection() {
             </div>
             
             <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
-              <span className="text-foreground font-medium">Civil Engineer</span> with hands-on luxury construction experience, 
-              combining technical expertise with global investment and development strategy.
+              <span className="text-foreground font-medium">A Civil Engineer by passion</span>, shaped by hands-on luxury construction — 
+              every brick laid taught me the art of turning raw land into living dreams.
             </p>
             
             <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed font-medium">

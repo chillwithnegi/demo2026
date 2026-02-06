@@ -8,35 +8,35 @@ import completionCity from "@/assets/completion-city.png";
 const processSteps = [
   { 
     number: "01", 
-    title: "Land Acquisition", 
-    subtitle: "Strategic Selection",
-    description: "Identifying and securing prime locations with exceptional development potential and growth trajectory",
+    title: "The Spark", 
+    subtitle: "Where It Begins",
+    description: "Standing on raw land, feeling its potential pulse through us — this is where every great story starts. We don't just see soil, we see futures.",
     image: landAcquisition,
-    highlight: "Premium Locations Only"
+    highlight: "💫 The Beginning"
   },
   { 
     number: "02", 
-    title: "Development Planning", 
-    subtitle: "Vision to Blueprint",
-    description: "Crafting architectural masterpieces with regulatory excellence and value maximization",
+    title: "The Vision Takes Shape", 
+    subtitle: "Blueprint of a Dream",
+    description: "Turning emotion into architecture, feelings into floor plans — this is where our heart meets the engineer's mind.",
     image: developmentPlanning,
-    highlight: "World-Class Design"
+    highlight: "🎨 The Imagination"
   },
   { 
     number: "03", 
-    title: "Construction", 
-    subtitle: "Precision Execution",
-    description: "Quality-driven construction with strict timelines, budget control, and luxury finishes",
+    title: "The Relentless Grind", 
+    subtitle: "Blood, Sweat & Steel",
+    description: "Every beam placed, every wall raised — this is our love language. Construction isn't labour, it's an act of devotion.",
     image: constructionSite,
-    highlight: "Uncompromising Quality"
+    highlight: "🔥 The Dedication"
   },
   { 
     number: "04", 
-    title: "Completion", 
-    subtitle: "Iconic Delivery",
-    description: "Transforming vision into landmark properties that define city skylines and set new benchmarks",
+    title: "The Triumph", 
+    subtitle: "A Landmark Is Born",
+    description: "That moment when a vision becomes a skyline — the overwhelming pride of creating something that will outlast us.",
     image: completionCity,
-    highlight: "Landmark Creation"
+    highlight: "🏆 The Glory"
   },
 ];
 
@@ -51,14 +51,14 @@ export default function LandmarkSection() {
         <div className="text-center mb-12 md:mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/30 mb-6">
             <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-gold text-sm font-semibold">The Transformation Journey</span>
+            <span className="text-gold text-sm font-semibold">The Emotional Transformation</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            From <span className="text-gradient-gold">Land</span> to <span className="text-gradient-gold">Landmark</span>
+            From <span className="text-gradient-gold">Raw Earth</span> to <span className="text-gradient-gold">Pure Emotion</span>
           </h2>
           <div className="h-1 w-32 mx-auto bg-gradient-gold rounded-full mb-6" />
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Witness the extraordinary journey of transforming raw land into iconic properties
+            Every landmark carries the emotions of those who dared to dream it into existence
           </p>
         </div>
 

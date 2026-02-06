@@ -18,10 +18,10 @@ export default function ExpertiseSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Regional Focus
+            🏠 Our Roots, Our Pride
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            Delhi NCR Expertise
+            Delhi NCR — Where Our Heart Beats
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
         </div>
@@ -31,7 +31,7 @@ export default function ExpertiseSection() {
           <div className="relative rounded-lg overflow-hidden shadow-card">
             <img
               src={delhiNcrMap}
-              alt="Delhi NCR Infrastructure Map"
+              alt="Delhi NCR — Our Home Ground"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -43,18 +43,18 @@ export default function ExpertiseSection() {
           {/* Content */}
           <div>
             <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-3 md:mb-4">
-              Why Delhi NCR?
+              Why Delhi NCR Moves Us
             </h3>
             <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
-              Infrastructure-driven appreciation logic across micro-markets: Golf Course Road, 
-              New Gurugram, Manesar, Dwarka Expressway, and UER-II.
+              This is more than a market — it's our hometown, the place where our journey began. 
+              We know every corridor, every micro-market, every heartbeat of this city.
             </p>
             
             <h4 className="font-serif text-lg md:text-xl font-bold text-gold mb-3 md:mb-4">
-              Market Intelligence
+              Local Knowledge, Deep Emotion
             </h4>
             <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed mb-6 md:mb-8">
-              Regional analysis and government spending patterns for maximum returns.
+              Our regional expertise isn't just data — it's decades of walking these streets, feeling the pulse of development.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
@@ -79,7 +79,7 @@ export default function ExpertiseSection() {
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-card">
               <img
                 src={delhiNcr}
-                alt="Delhi NCR Skyline"
+                alt="Delhi NCR Skyline — Our Canvas"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -94,7 +94,7 @@ export default function ExpertiseSection() {
           <div className="rounded-lg overflow-hidden shadow-card border border-border">
             <img
               src={cityMicromarket}
-              alt="City Micro Market Analysis"
+              alt="The Details We Obsess Over"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -103,7 +103,7 @@ export default function ExpertiseSection() {
           <div className="rounded-lg overflow-hidden shadow-card border border-border">
             <img
               src={indiaMapColorful}
-              alt="India Real Estate Markets"
+              alt="India — Our Nation, Our Pride"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -115,7 +115,7 @@ export default function ExpertiseSection() {
         <div className="pt-10 md:pt-16 border-t border-border">
           <div className="text-center mb-8 md:mb-12">
             <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-3 md:mb-4">
-              Additional Expertise Areas
+              More Ways We Express Our Passion
             </h3>
           </div>
 
@@ -125,8 +125,8 @@ export default function ExpertiseSection() {
                 Business Development & Franchise
               </h4>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                Franchise expansion planning, location strategy for brands, 
-                outlet optimisation, footfall and revenue modelling
+                Helping brands find their perfect home — because we believe every great business 
+                deserves a space that matches its ambition.
               </p>
             </div>
             <div className="card-luxury">
@@ -134,8 +134,8 @@ export default function ExpertiseSection() {
                 Digital Marketing for Real Estate
               </h4>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                Real estate-focused digital marketing strategy, lead generation systems, 
-                premium brand positioning
+                Telling our story and our partners' stories through powerful digital presence — 
+                because great work deserves to be seen.
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function ExpertiseSection() {
             <div className="rounded-lg overflow-hidden shadow-card">
               <img
                 src={investingLand}
-                alt="Investing in Land"
+                alt="The Emotion of Investing in Land"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"

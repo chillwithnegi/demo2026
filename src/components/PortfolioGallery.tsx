@@ -17,22 +17,35 @@ import luxuryInterior from "@/assets/luxury-interior.png";
 import wealthJourney from "@/assets/wealth-journey.png";
 
 const galleryItems = [
-  { src: luxuryConstruction, alt: "Luxury Construction Excellence", category: "Construction" },
-  { src: luxuryConstruction2, alt: "Premium Build Quality", category: "Construction" },
-  { src: commercial, alt: "Commercial Development", category: "Commercial" },
-  { src: primeLandVisual, alt: "Prime Land Opportunities", category: "Strategy" },
-  { src: exactProperty, alt: "Exact Property Selection", category: "Strategy" },
-  { src: worldGlobeColorful, alt: "Global Market Vision", category: "Global" },
-  { src: worldMapColorful, alt: "Worldwide Investment Map", category: "Global" },
-  { src: worldGlobe, alt: "Global Strategy", category: "Global" },
-  { src: worldMap, alt: "World Markets", category: "Global" },
-  { src: cityWireframe, alt: "City Development Blueprint", category: "Planning" },
-  { src: heroSkyline, alt: "Premium Skyline Portfolio", category: "Portfolio" },
-  { src: waterfall, alt: "Luxury Amenities - Waterfall Bar", category: "Luxury" },
-  { src: indiaMap, alt: "India Market Analysis", category: "Strategy" },
-  { src: residentialAerial, alt: "Residential Aerial View", category: "Residential" },
-  { src: luxuryInterior, alt: "Luxury Interior Design", category: "Luxury" },
-  { src: wealthJourney, alt: "Wealth Creation Journey", category: "Strategy" },
+  // THE PASSION — Our love for building
+  { src: luxuryConstruction, alt: "The Passion of Building Excellence", emotion: "🔥 The Passion" },
+  { src: luxuryConstruction2, alt: "Craftsmanship That Comes From Love", emotion: "🔥 The Passion" },
+  
+  // THE DREAM — Our vision for the future
+  { src: heroSkyline, alt: "Skylines We Dream About", emotion: "🌆 The Dream" },
+  { src: cityWireframe, alt: "Blueprints Born From Imagination", emotion: "🌆 The Dream" },
+  
+  // THE PRIDE — What makes us proud
+  { src: luxuryInterior, alt: "Interiors That Reflect Our Soul", emotion: "✨ The Pride" },
+  { src: waterfall, alt: "Details That Take Our Breath Away", emotion: "✨ The Pride" },
+  { src: residentialAerial, alt: "Communities We're Proud To Create", emotion: "✨ The Pride" },
+  
+  // THE AMBITION — Global thinking
+  { src: worldGlobeColorful, alt: "Dreaming Without Borders", emotion: "🌍 The Ambition" },
+  { src: worldMapColorful, alt: "Our Reach, Our Aspiration", emotion: "🌍 The Ambition" },
+  { src: worldGlobe, alt: "A Global Perspective, A Local Heart", emotion: "🌍 The Ambition" },
+  { src: worldMap, alt: "Markets That Inspire Our Journey", emotion: "🌍 The Ambition" },
+  
+  // THE ROOTS — Where we belong
+  { src: indiaMap, alt: "India — Where Our Story Began", emotion: "🏠 The Roots" },
+  { src: commercial, alt: "Commercial Spaces We Believe In", emotion: "🏠 The Roots" },
+  
+  // THE FOCUS — Our strategic eye
+  { src: primeLandVisual, alt: "Land That Speaks To Us", emotion: "🎯 The Focus" },
+  { src: exactProperty, alt: "Precision That Defines Us", emotion: "🎯 The Focus" },
+  
+  // THE LEGACY — What we leave behind
+  { src: wealthJourney, alt: "A Legacy of Wealth Creation", emotion: "🏆 The Legacy" },
 ];
 
 export default function PortfolioGallery() {
@@ -41,14 +54,14 @@ export default function PortfolioGallery() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Visual Portfolio
+            📸 A Visual Love Letter
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            Our Work & Vision Gallery
+            Every Image Tells Our Story
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
           <p className="text-muted-foreground text-sm md:text-base lg:text-lg max-w-2xl mx-auto">
-            A curated collection showcasing our strategic vision, premium constructions, and global perspective.
+            These aren't just photographs — they're windows into our emotions, our dreams, and the journey that defines us.
           </p>
         </div>
 
@@ -74,7 +87,7 @@ export default function PortfolioGallery() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
                   <span className="inline-block px-2 py-1 rounded-full bg-gold/20 text-gold text-[10px] md:text-xs font-semibold mb-1">
-                    {item.category}
+                    {item.emotion}
                   </span>
                   <p className="text-primary-foreground text-xs md:text-sm font-medium">
                     {item.alt}
