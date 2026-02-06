@@ -1,11 +1,11 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
 import StrategicDashboard from "@/components/StrategicDashboard";
-import worldGlobeColorful from "@/assets/world-globe-colorful.png";
-import worldMapColorful from "@/assets/world-map-colorful.png";
-import indiaMapColorful from "@/assets/india-map-colorful.png";
-import cityMicromarket from "@/assets/city-micromarket.png";
-import exactProperty from "@/assets/exact-property.png";
+import marketWorld from "@/assets/market-world.png";
+import marketCountry from "@/assets/market-country.png";
+import marketCity from "@/assets/market-city.png";
+import marketMicromarket from "@/assets/market-micromarket.png";
+import marketExactProperty from "@/assets/market-exact-property.png";
 
 const precisionPoints = [
   {
@@ -31,11 +31,11 @@ const precisionPoints = [
 ];
 
 const marketTiles = [
-  { label: "World", image: worldGlobeColorful },
-  { label: "Country", image: worldMapColorful },
-  { label: "City", image: indiaMapColorful },
-  { label: "Micro Market", image: cityMicromarket },
-  { label: "Exact Property", image: exactProperty },
+  { label: "World", image: marketWorld },
+  { label: "Country", image: marketCountry },
+  { label: "City", image: marketCity },
+  { label: "Micro Market", image: marketMicromarket },
+  { label: "Exact Property", image: marketExactProperty },
 ];
 
 export default function PrecisionSection() {
@@ -93,27 +93,27 @@ export default function PrecisionSection() {
           <div className="hidden lg:flex items-center justify-center gap-3 w-full max-w-6xl">
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex items-center">
-                <div className="group relative w-44 h-44 xl:w-52 xl:h-52 rounded-2xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 transform hover:scale-105 bg-card">
+                <div className="group relative w-48 h-56 xl:w-56 xl:h-64 rounded-2xl overflow-hidden border-2 border-gold/40 hover:border-gold hover:shadow-[0_0_30px_rgba(201,168,76,0.3)] transition-all duration-500 transform hover:scale-105 bg-card">
                   <ClickableImage 
                     src={tile.image} 
                     alt={tile.label}
-                    width="208"
-                    height="208"
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+                    width="224"
+                    height="256"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-115 brightness-90 group-hover:brightness-110"
                     showZoomIcon={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none" />
                   <div className="absolute inset-0 flex flex-col items-center justify-end p-4 pointer-events-none">
-                    <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
-                      <span className="text-gold font-bold text-lg">{index + 1}</span>
+                    <div className="w-11 h-11 rounded-full bg-gradient-gold border-2 border-gold/70 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(201,168,76,0.4)]">
+                      <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
                     </div>
-                    <p className="font-serif font-bold text-base xl:text-lg text-center text-foreground group-hover:text-gold transition-colors">
+                    <p className="font-serif font-bold text-base xl:text-lg text-center text-foreground group-hover:text-gold transition-colors drop-shadow-lg">
                       {tile.label}
                     </p>
                   </div>
                 </div>
                 {index < marketTiles.length - 1 && (
-                  <div className="mx-2 xl:mx-3 w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                  <div className="mx-2 xl:mx-3 w-11 h-11 rounded-full bg-gradient-gold flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.3)] animate-pulse">
                     <ChevronRight className="w-5 h-5 text-primary-foreground" />
                   </div>
                 )}
@@ -125,28 +125,28 @@ export default function PrecisionSection() {
           <div className="lg:hidden flex flex-col items-center gap-0 w-full max-w-sm">
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex flex-col items-center w-full">
-                <div className="group relative w-full aspect-square rounded-xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 bg-card">
+                <div className="group relative w-full aspect-[4/3] rounded-xl overflow-hidden border-2 border-gold/40 hover:border-gold hover:shadow-[0_0_30px_rgba(201,168,76,0.3)] transition-all duration-500 bg-card">
                   <ClickableImage 
                     src={tile.image} 
                     alt={tile.label}
                     width="380"
-                    height="380"
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+                    height="285"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 brightness-90 group-hover:brightness-110"
                     showZoomIcon={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none" />
                   <div className="absolute inset-0 flex flex-col items-center justify-end p-4 pointer-events-none">
-                    <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
-                      <span className="text-gold font-bold text-lg">{index + 1}</span>
+                    <div className="w-11 h-11 rounded-full bg-gradient-gold border-2 border-gold/70 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(201,168,76,0.4)]">
+                      <span className="text-primary-foreground font-bold text-lg">{index + 1}</span>
                     </div>
-                    <p className="font-serif font-bold text-lg text-center text-foreground group-hover:text-gold transition-colors">
+                    <p className="font-serif font-bold text-lg text-center text-foreground group-hover:text-gold transition-colors drop-shadow-lg">
                       {tile.label}
                     </p>
                   </div>
                 </div>
                 {index < marketTiles.length - 1 && (
                   <div className="py-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                    <div className="w-11 h-11 rounded-full bg-gradient-gold flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.3)] animate-pulse">
                       <ChevronDown className="w-5 h-5 text-primary-foreground" />
                     </div>
                   </div>
