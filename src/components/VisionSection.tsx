@@ -27,15 +27,26 @@ export default function VisionSection() {
             <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
               About the Founder
             </p>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight whitespace-nowrap">
               Where Vision Meets Precision
             </h2>
             <div className="divider-gold !mx-0 mb-6 md:mb-8" />
+            
+            {/* MBA Emphasis */}
+            <div className="mb-6 p-4 md:p-6 rounded-lg bg-gold/5 border border-gold/20">
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-gold mb-2">
+                MBA in Real Estate & Urban Infrastructure
+              </h3>
+              <p className="text-muted-foreground text-sm md:text-base">
+                from RICS School of Built Environment
+              </p>
+            </div>
+            
             <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
-              Civil Engineer with an MBA in Real Estate & Urban Infrastructure from RICS, 
-              combining hands-on luxury construction experience with global investment and 
-              development strategy.
+              <span className="text-foreground font-medium">Civil Engineer</span> with hands-on luxury construction experience, 
+              combining technical expertise with global investment and development strategy.
             </p>
+            
             <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed font-medium">
               I don't just deal in property. I define <span className="text-gold">what</span> should be built on your land, 
               <span className="text-gold"> where</span> it should be built, <span className="text-gold">why</span> it should be built, 
