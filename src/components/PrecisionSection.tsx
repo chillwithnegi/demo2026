@@ -1,8 +1,10 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
-import cityWireframe from "@/assets/city-wireframe.png";
-import worldGlobe from "@/assets/world-globe.png";
-import worldMap from "@/assets/world-map.png";
-import indiaMap from "@/assets/india-map.png";
+import strategicAnalysis from "@/assets/strategic-analysis.png";
+import worldGlobeColorful from "@/assets/world-globe-colorful.png";
+import worldMapColorful from "@/assets/world-map-colorful.png";
+import indiaMapColorful from "@/assets/india-map-colorful.png";
+import cityMicromarket from "@/assets/city-micromarket.png";
+import exactProperty from "@/assets/exact-property.png";
 
 const precisionPoints = [
   {
@@ -28,11 +30,11 @@ const precisionPoints = [
 ];
 
 const marketTiles = [
-  { label: "World", image: worldGlobe },
-  { label: "Country", image: worldMap },
-  { label: "City", image: indiaMap },
-  { label: "Micro Market", image: cityWireframe },
-  { label: "Exact Property", image: "/images/city-wireframe-dark.webp" },
+  { label: "World", image: worldGlobeColorful },
+  { label: "Country", image: worldMapColorful },
+  { label: "City", image: indiaMapColorful },
+  { label: "Micro Market", image: cityMicromarket },
+  { label: "Exact Property", image: exactProperty },
 ];
 
 export default function PrecisionSection() {
@@ -40,22 +42,9 @@ export default function PrecisionSection() {
     <section className="py-16 md:py-24 lg:py-32 px-4 md:px-8 bg-background text-foreground relative overflow-hidden">
       {/* Decorative background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
-      
-      {/* Subtle Background Texture */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-        <img 
-          src="/images/city-wireframe-dark.webp" 
-          alt="" 
-          width="1024"
-          height="1024"
-          className="w-full h-full object-cover" 
-          loading="lazy" 
-          decoding="async" 
-        />
-      </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-12 md:mb-20">
+        <div className="text-center mb-12 md:mb-16">
           <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 animate-fade-in">
             Strategic Approach
           </p>
@@ -66,6 +55,19 @@ export default function PrecisionSection() {
           <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-glow animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Real Estate Success Demands <span className="text-gradient-gold">Precision</span>
           </h3>
+        </div>
+
+        {/* Strategic Analysis Infographic */}
+        <div className="mb-16 md:mb-20">
+          <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20">
+            <img 
+              src={strategicAnalysis} 
+              alt="Strategic Real Estate Market Analysis Dashboard" 
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
 
         {/* Precision Points */}
@@ -90,35 +92,37 @@ export default function PrecisionSection() {
 
         {/* Market Analysis Framework */}
         <div className="flex flex-col items-center">
-          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center text-gradient-gold">
+          <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center text-gradient-gold">
             Market Analysis Framework
           </h3>
           
           {/* Desktop: Horizontal layout with right arrows */}
-          <div className="hidden lg:flex items-center justify-center gap-4 w-full max-w-6xl">
+          <div className="hidden lg:flex items-center justify-center gap-3 w-full max-w-6xl">
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex items-center">
-                <div className="group relative w-40 h-40 xl:w-48 xl:h-48 rounded-2xl overflow-hidden border border-white/10 hover:border-gold hover:shadow-gold transition-all duration-500 transform hover:scale-105 bg-card">
+                <div className="group relative w-44 h-44 xl:w-52 xl:h-52 rounded-2xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 transform hover:scale-105 bg-card">
                   <img 
                     src={tile.image} 
                     alt={tile.label}
-                    width="192"
-                    height="192"
-                    className="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-all duration-500 scale-110 group-hover:scale-100 grayscale group-hover:grayscale-0"
+                    width="208"
+                    height="208"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                    <div className="w-full h-full border border-gold/30 rounded-xl absolute inset-0 m-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <p className="font-serif font-bold text-base xl:text-lg text-center text-foreground relative z-10 group-hover:text-gold transition-colors">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4">
+                    <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
+                      <span className="text-gold font-bold text-lg">{index + 1}</span>
+                    </div>
+                    <p className="font-serif font-bold text-base xl:text-lg text-center text-foreground group-hover:text-gold transition-colors">
                       {tile.label}
                     </p>
                   </div>
                 </div>
                 {index < marketTiles.length - 1 && (
-                  <div className="mx-2 xl:mx-4 w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center">
-                    <ChevronRight className="w-5 h-5 text-gold" />
+                  <div className="mx-2 xl:mx-3 w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                    <ChevronRight className="w-5 h-5 text-primary-foreground" />
                   </div>
                 )}
               </div>
@@ -129,18 +133,21 @@ export default function PrecisionSection() {
           <div className="lg:hidden flex flex-col items-center gap-0 w-full max-w-sm">
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex flex-col items-center w-full">
-                <div className="group relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 hover:border-gold hover:shadow-gold transition-all duration-500 bg-card">
+                <div className="group relative w-full aspect-square rounded-xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 bg-card">
                   <img 
                     src={tile.image} 
                     alt={tile.label}
                     width="380"
-                    height="285"
-                    className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+                    height="380"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity" />
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4">
+                    <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
+                      <span className="text-gold font-bold text-lg">{index + 1}</span>
+                    </div>
                     <p className="font-serif font-bold text-lg text-center text-foreground group-hover:text-gold transition-colors">
                       {tile.label}
                     </p>
@@ -148,8 +155,8 @@ export default function PrecisionSection() {
                 </div>
                 {index < marketTiles.length - 1 && (
                   <div className="py-3">
-                    <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center">
-                      <ChevronDown className="w-5 h-5 text-gold" />
+                    <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                      <ChevronDown className="w-5 h-5 text-primary-foreground" />
                     </div>
                   </div>
                 )}

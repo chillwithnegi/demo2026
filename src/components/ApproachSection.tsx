@@ -1,26 +1,23 @@
-import { MapPin, Search, HardHat, CheckCircle } from "lucide-react";
-import sixStepProcess from "@/assets/six-step-process.png";
+import primeLandVisual from "@/assets/prime-land-visual.png";
+import capitalDevelopmentVisual from "@/assets/capital-development-visual.png";
+import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
+import landMoneyStrategy from "@/assets/land-money-strategy.png";
 
 const approachSteps = [
   {
-    icon: MapPin,
-    title: "Site Selection",
-    description: "Strategic identification of locations with maximum appreciation potential",
+    title: "Prime Land",
+    description: "Strategic identification and acquisition of high-potential land parcels in growth corridors",
+    image: primeLandVisual,
   },
   {
-    icon: Search,
-    title: "Due Diligence",
-    description: "Comprehensive analysis of legal, environmental, and financial aspects",
+    title: "Capital Development",
+    description: "Smart investment structuring and capital deployment for maximum wealth multiplication",
+    image: capitalDevelopmentVisual,
   },
   {
-    icon: HardHat,
-    title: "Development",
-    description: "Managed execution with quality control and cost optimization",
-  },
-  {
-    icon: CheckCircle,
-    title: "Delivery",
-    description: "Timely completion and strategic marketing for premium positioning",
+    title: "Execution Strategy",
+    description: "End-to-end project execution from planning to completion with quality assurance",
+    image: executionStrategyVisual,
   },
 ];
 
@@ -29,46 +26,66 @@ export default function ApproachSection() {
     <section className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
+          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
+            The Success Formula
+          </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
             Our Approach
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
-          <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-semibold text-gold mb-3 md:mb-4">
-            Strategic Process
-          </h3>
-          <p className="text-muted-foreground text-sm md:text-base lg:text-lg max-w-3xl mx-auto">
-            Our systematic methodology transforms land into landmark properties.
-          </p>
         </div>
 
-        {/* Six Step Process Infographic */}
-        <div className="mb-12 md:mb-20">
-          <div className="rounded-lg overflow-hidden shadow-card border border-border">
+        {/* Land + Money + Strategy Infographic */}
+        <div className="mb-12 md:mb-16">
+          <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20 bg-card">
             <img 
-              src={sixStepProcess} 
-              alt="The Six-Step Process for Strategic Market Development" 
-              className="w-full h-auto object-contain bg-white"
+              src={landMoneyStrategy} 
+              alt="Land Money Strategy - The Success Triangle" 
+              className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
             />
           </div>
+          <p className="text-center text-muted-foreground mt-4 text-sm md:text-base">
+            The three pillars of real estate success: <span className="text-gold font-semibold">Land</span> + <span className="text-gold font-semibold">Money</span> + <span className="text-gold font-semibold">Strategy</span> = Guaranteed Returns
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+        {/* Three Pillars with Images */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {approachSteps.map((step, index) => (
             <div
               key={index}
-              className="bg-card p-4 md:p-5 lg:p-6 rounded-lg border border-border hover:border-gold/50 transition-all duration-300 text-center"
+              className="group relative rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 border border-gold/20 hover:border-gold/50"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-gold/10 flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <step.icon className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gold" />
+              {/* Image */}
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src={step.image}
+                  alt={step.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <h4 className="font-serif text-sm md:text-base lg:text-lg font-bold text-foreground mb-2 md:mb-3">
-                {step.title}
-              </h4>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                {step.description}
-              </p>
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+              
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+                    <span className="font-serif text-lg font-bold text-primary-foreground">{index + 1}</span>
+                  </div>
+                  <h4 className="font-serif text-xl md:text-2xl font-bold text-foreground group-hover:text-gold transition-colors">
+                    {step.title}
+                  </h4>
+                </div>
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
