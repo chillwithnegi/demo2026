@@ -1,5 +1,9 @@
 import { MapPinned, Banknote, Lightbulb, Target, Zap, TrendingUp } from "lucide-react";
+import { ClickableImage } from "@/components/ui/image-lightbox";
 import corePortfolio from "@/assets/core-portfolio.png";
+import strategicPlanning from "@/assets/strategic-planning.png";
+import wealthCreationJourney from "@/assets/wealth-creation-journey.png";
+import corePortfolioInvestor from "@/assets/core-portfolio-investor.png";
 
 const philosophyItems = [
   {
@@ -31,18 +35,21 @@ const wealthStrategies = [
     number: "1",
     title: "Strategic Planning",
     description: "Comprehensive market analysis and development feasibility studies that identify high-potential opportunities before they become obvious to the market.",
+    image: strategicPlanning,
   },
   {
     icon: Zap,
     number: "2",
     title: "Execution Excellence",
     description: "Hands-on project management from concept to completion, ensuring every detail aligns with the wealth creation strategy and timeline.",
+    image: wealthCreationJourney,
   },
   {
     icon: TrendingUp,
     number: "3",
     title: "Value Multiplication",
     description: "Systematic approach to enhancing asset value through strategic improvements, market positioning, and optimal exit timing.",
+    image: corePortfolioInvestor,
   },
 ];
 
@@ -113,22 +120,35 @@ export default function PhilosophySection() {
           {wealthStrategies.map((item, index) => (
             <div
               key={index}
-              className="p-4 md:p-6 rounded-lg bg-card border border-border hover:border-gold/50 transition-all duration-300"
+              className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-gold/50 transition-all duration-300 shadow-card hover:shadow-elegant"
             >
-              <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-5 h-5 md:w-6 md:h-6 text-gold" />
+              {/* Content First */}
+              <div className="p-4 md:p-6">
+                <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 md:w-6 md:h-6 text-gold" />
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-gold font-bold text-base md:text-lg">{item.number}.</span>
+                    <h4 className="font-serif text-base md:text-lg font-bold text-foreground">
+                      {item.title}
+                    </h4>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-gold font-bold text-base md:text-lg">{item.number}.</span>
-                  <h4 className="font-serif text-base md:text-lg font-bold text-foreground">
-                    {item.title}
-                  </h4>
-                </div>
+                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                {item.description}
-              </p>
+
+              {/* Image After */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <ClickableImage
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  showZoomIcon={false}
+                />
+              </div>
             </div>
           ))}
         </div>
