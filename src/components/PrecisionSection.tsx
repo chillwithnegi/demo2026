@@ -1,6 +1,6 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import StrategicDashboard from "@/components/StrategicDashboard";
+import investingLand from "@/assets/investing-land.png";
 import marketWorld from "@/assets/market-world.png";
 import marketCountry from "@/assets/market-country.png";
 import marketCity from "@/assets/market-city.png";
@@ -60,7 +60,13 @@ export default function PrecisionSection() {
 
         {/* Strategic Analysis Infographic */}
         <div className="mb-16 md:mb-20">
-          <StrategicDashboard />
+          <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-elegant border border-gold/20">
+            <ClickableImage 
+              src={investingLand} 
+              alt="Investing in Land - Virtual and Physical Land Strategy" 
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Precision Points */}
