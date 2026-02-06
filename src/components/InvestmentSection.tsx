@@ -1,20 +1,20 @@
-import residentialAerial from "@/assets/residential-aerial.png";
-import luxuryInterior from "@/assets/luxury-interior.png";
-import wealthJourney from "@/assets/wealth-journey.png";
+import residential from "@/assets/residential.jpg";
+import commercialAtrium from "@/assets/commercial-atrium.png";
+import hospitality from "@/assets/hospitality.jpg";
 
 const investments = [
   {
-    image: residentialAerial,
+    image: residential,
     title: "Residential Excellence",
     description: "Premium developments that command premium prices and generate superior returns.",
   },
   {
-    image: luxuryInterior,
+    image: commercialAtrium,
     title: "Commercial Growth",
     description: "Office and retail spaces positioned in emerging corridors for appreciation.",
   },
   {
-    image: wealthJourney,
+    image: hospitality,
     title: "Hospitality Returns",
     description: "High-end hospitality projects with consistent revenue streams.",
   },

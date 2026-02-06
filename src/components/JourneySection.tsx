@@ -1,16 +1,20 @@
+import luxuryConstruction1 from "@/assets/luxury-construction-1.jpg";
+import luxuryVillaPool from "@/assets/luxury-villa-pool.png";
+import futureCity from "@/assets/future-city.png";
+
 const journeyItems = [
   {
-    image: "/images/premium-structures.png",
+    image: luxuryConstruction1,
     title: "Premium Structures",
     description: "High-end residential and commercial construction with uncompromising quality.",
   },
   {
-    image: "/images/waterfall-bar.webp",
+    image: luxuryVillaPool,
     title: "Signature Landscapes",
     description: "Golf courses, landscaped communities, and world-class amenities.",
   },
   {
-    image: "/images/future-city.webp",
+    image: futureCity,
     title: "Iconic Towers",
     description: "Landmark high-rise developments that reshape skylines.",
   },
@@ -48,7 +52,7 @@ export default function JourneySection() {
                   height="450"
                   loading="lazy"
                   decoding="async"
-                  className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${index === 0 ? 'object-contain' : 'object-cover'}`}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-4 md:p-6">

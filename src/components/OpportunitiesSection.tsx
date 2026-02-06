@@ -1,7 +1,7 @@
 import { Building2, TrendingUp, Handshake } from "lucide-react";
 import wealthMultiplierBuilding from "@/assets/wealth-multiplier-building.png";
-import constructionSite from "@/assets/construction-site.png";
-import businessMeeting from "@/assets/business-meeting.jpg";
+import blueprintDesk from "@/assets/blueprint-desk.png";
+import globalStrategyIdea from "@/assets/global-strategy-idea.jpg";
 
 const opportunities = [
   {
@@ -14,13 +14,13 @@ const opportunities = [
     icon: TrendingUp,
     title: "Value Add Assets",
     description: "Repositioning opportunities to unlock hidden value.",
-    image: constructionSite,
+    image: blueprintDesk,
   },
   {
     icon: Handshake,
     title: "Joint Ventures",
     description: "Strategic partnerships with shared risk and rewards.",
-    image: businessMeeting,
+    image: globalStrategyIdea,
   },
 ];
 

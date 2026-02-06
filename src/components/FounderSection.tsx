@@ -1,4 +1,5 @@
-import founderVisionSilhouette from "@/assets/founder-vision-silhouette.jpg";
+import visionPortrait from "@/assets/vision-portrait.png";
+import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
 import { Award, GraduationCap, Briefcase, Globe } from "lucide-react";
 
 const credentials = [
@@ -22,7 +23,7 @@ export default function FounderSection() {
           <div className="h-px w-24 mx-auto bg-gold mb-4 md:mb-6" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mb-10 md:mb-16">
           {/* Content */}
           <div>
             <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
@@ -53,7 +54,7 @@ export default function FounderSection() {
           <div className="relative">
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-gold/20 shadow-elegant">
               <img
-                src={founderVisionSilhouette}
+                src={visionPortrait}
                 alt="Founder Vision & Expertise"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -64,6 +65,17 @@ export default function FounderSection() {
             {/* Decorative */}
             <div className="hidden md:block absolute -bottom-3 -left-3 lg:-bottom-4 lg:-left-4 w-full h-full border-2 border-gold/30 rounded-lg -z-10" />
           </div>
+        </div>
+
+        {/* Execution Strategy Visual */}
+        <div className="rounded-lg overflow-hidden shadow-elegant border border-gold/20">
+          <img
+            src={executionStrategyVisual}
+            alt="Execution Strategy Framework"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
     </section>

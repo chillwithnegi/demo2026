@@ -12,6 +12,7 @@ import ApproachSection from "@/components/ApproachSection";
 import ServicesSection from "@/components/ServicesSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import FounderSection from "@/components/FounderSection";
+import PortfolioGallery from "@/components/PortfolioGallery";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -33,6 +34,7 @@ const Index = () => {
         <ServicesSection />
         <ExpertiseSection />
         <FounderSection />
+        <PortfolioGallery />
         <CTASection />
       </main>
       <Footer />
