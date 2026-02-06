@@ -1,3 +1,5 @@
+import { ClickableImage } from "@/components/ui/image-lightbox";
+
 const journeyItems = [
   {
     image: "/images/luxury-villa-pool.webp",
@@ -39,17 +41,16 @@ export default function JourneySection() {
               key={index}
               className="group relative aspect-[4/5] rounded-lg overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500"
             >
-              <img
+              <ClickableImage
                 src={item.image}
                 alt={item.title}
                 width="380"
                 height="475"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-                decoding="async"
+                showZoomIcon={false}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-primary-foreground">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-primary-foreground pointer-events-none">
                 <p className="text-gold-light text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
                   0{index + 1}
                 </p>
