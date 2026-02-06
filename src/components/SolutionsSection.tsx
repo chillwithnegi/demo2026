@@ -1,5 +1,5 @@
 import { Search, Calculator, FileText, HardHat, Users } from "lucide-react";
-import globalStrategyIdea from "@/assets/global-strategy-idea.jpg";
+import completeSolution from "@/assets/complete-solution.png";
 
 const solutions = [
   { icon: Search, text: "Market research and site selection" },
@@ -49,7 +49,7 @@ export default function SolutionsSection() {
           <div className="order-1 lg:order-2">
             <div className="relative rounded-lg overflow-hidden shadow-elegant border border-border">
               <img
-                src={globalStrategyIdea}
+                src={completeSolution}
                 alt="Global Strategic Vision"
                 className="w-full h-auto object-cover"
                 loading="lazy"
