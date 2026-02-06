@@ -1,4 +1,5 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
+import { ClickableImage } from "@/components/ui/image-lightbox";
 import strategicAnalysis from "@/assets/strategic-analysis.png";
 import worldGlobeColorful from "@/assets/world-globe-colorful.png";
 import worldMapColorful from "@/assets/world-map-colorful.png";
@@ -60,14 +61,13 @@ export default function PrecisionSection() {
         {/* Strategic Analysis Infographic */}
         <div className="mb-16 md:mb-20">
           <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20">
-            <img 
+            <ClickableImage 
               src={strategicAnalysis} 
               alt="Strategic Real Estate Market Analysis Dashboard" 
               className="w-full h-auto object-cover"
-              loading="lazy"
-              decoding="async"
             />
           </div>
+          <p className="text-center text-muted-foreground text-sm mt-3">Click image to enlarge</p>
         </div>
 
         {/* Precision Points */}
@@ -101,17 +101,16 @@ export default function PrecisionSection() {
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex items-center">
                 <div className="group relative w-44 h-44 xl:w-52 xl:h-52 rounded-2xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 transform hover:scale-105 bg-card">
-                  <img 
+                  <ClickableImage 
                     src={tile.image} 
                     alt={tile.label}
                     width="208"
                     height="208"
                     className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
+                    showZoomIcon={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4 pointer-events-none">
                     <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
                       <span className="text-gold font-bold text-lg">{index + 1}</span>
                     </div>
@@ -134,17 +133,16 @@ export default function PrecisionSection() {
             {marketTiles.map((tile, index) => (
               <div key={index} className="flex flex-col items-center w-full">
                 <div className="group relative w-full aspect-square rounded-xl overflow-hidden border-2 border-gold/30 hover:border-gold hover:shadow-gold transition-all duration-500 bg-card">
-                  <img 
+                  <ClickableImage 
                     src={tile.image} 
                     alt={tile.label}
                     width="380"
                     height="380"
                     className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
+                    showZoomIcon={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-4 pointer-events-none">
                     <div className="w-10 h-10 rounded-full bg-gold/20 border border-gold/50 flex items-center justify-center mb-2">
                       <span className="text-gold font-bold text-lg">{index + 1}</span>
                     </div>

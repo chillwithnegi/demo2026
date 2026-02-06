@@ -1,3 +1,4 @@
+import { ClickableImage } from "@/components/ui/image-lightbox";
 import primeLandVisual from "@/assets/prime-land-visual.png";
 import capitalDevelopmentVisual from "@/assets/capital-development-visual.png";
 import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
@@ -38,17 +39,16 @@ export default function ApproachSection() {
         {/* Land + Money + Strategy Infographic */}
         <div className="mb-12 md:mb-16">
           <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20 bg-card">
-            <img 
+            <ClickableImage 
               src={landMoneyStrategy} 
               alt="Land Money Strategy - The Success Triangle" 
               className="w-full h-auto object-cover"
-              loading="lazy"
-              decoding="async"
             />
           </div>
           <p className="text-center text-muted-foreground mt-4 text-sm md:text-base">
             The three pillars of real estate success: <span className="text-gold font-semibold">Land</span> + <span className="text-gold font-semibold">Money</span> + <span className="text-gold font-semibold">Strategy</span> = Guaranteed Returns
           </p>
+          <p className="text-center text-muted-foreground text-xs mt-2">Click image to enlarge</p>
         </div>
 
         {/* Three Pillars with Images */}
@@ -60,20 +60,19 @@ export default function ApproachSection() {
             >
               {/* Image */}
               <div className="aspect-square overflow-hidden">
-                <img 
+                <ClickableImage 
                   src={step.image}
                   alt={step.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                  decoding="async"
+                  showZoomIcon={false}
                 />
               </div>
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
               
               {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 pointer-events-none">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
                     <span className="font-serif text-lg font-bold text-primary-foreground">{index + 1}</span>

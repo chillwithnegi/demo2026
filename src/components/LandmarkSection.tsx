@@ -1,4 +1,5 @@
 import { ChevronDown, Sparkles } from "lucide-react";
+import { ClickableImage } from "@/components/ui/image-lightbox";
 import landAcquisition from "@/assets/land-acquisition.png";
 import blueprintDesk from "@/assets/blueprint-desk.png";
 import constructionSite from "@/assets/construction-site.png";
@@ -70,17 +71,16 @@ export default function LandmarkSection() {
                 <div className="flex flex-col md:flex-row">
                   {/* Image Part */}
                   <div className="w-full md:w-2/5 h-56 md:h-auto relative overflow-hidden">
-                    <img 
+                    <ClickableImage 
                       src={step.image} 
                       alt={step.title} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      loading="lazy"
-                      decoding="async"
+                      showZoomIcon={false}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/50 md:bg-gradient-to-l" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/50 md:bg-gradient-to-l pointer-events-none" />
                     
                     {/* Large Step Number */}
-                    <div className="absolute top-4 left-4 md:top-6 md:left-6">
+                    <div className="absolute top-4 left-4 md:top-6 md:left-6 pointer-events-none">
                       <span className="font-serif text-5xl md:text-6xl font-bold text-gold/30 group-hover:text-gold/50 transition-colors">
                         {step.number}
                       </span>
