@@ -1,24 +1,28 @@
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import primeLandVisual from "@/assets/prime-land-visual.png";
-import capitalDevelopmentVisual from "@/assets/capital-development-visual.png";
-import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
+import { Target, Zap, TrendingUp } from "lucide-react";
+import strategicPlanning from "@/assets/strategic-planning.png";
+import wealthCreationJourney from "@/assets/wealth-creation-journey.png";
+import corePortfolioInvestor from "@/assets/core-portfolio-investor.png";
 import landMoneyStrategy from "@/assets/land-money-strategy.png";
 
 const approachSteps = [
   {
-    title: "Prime Land",
-    description: "Strategic identification and acquisition of high-potential land parcels in growth corridors",
-    image: primeLandVisual,
+    icon: Target,
+    title: "Strategic Planning",
+    description: "Comprehensive market analysis and development feasibility studies that identify high-potential opportunities before they become obvious to the market.",
+    image: strategicPlanning,
   },
   {
-    title: "Capital Development",
-    description: "Smart investment structuring and capital deployment for maximum wealth multiplication",
-    image: capitalDevelopmentVisual,
+    icon: Zap,
+    title: "Execution Excellence",
+    description: "Hands-on project management from concept to completion, ensuring every detail aligns with the wealth creation strategy and timeline.",
+    image: wealthCreationJourney,
   },
   {
-    title: "Execution Strategy",
-    description: "End-to-end project execution from planning to completion with quality assurance",
-    image: executionStrategyVisual,
+    icon: TrendingUp,
+    title: "Value Multiplication",
+    description: "Systematic approach to enhancing asset value through strategic improvements, market positioning, and optimal exit timing.",
+    image: corePortfolioInvestor,
   },
 ];
 
@@ -56,34 +60,31 @@ export default function ApproachSection() {
           {approachSteps.map((step, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 border border-gold/20 hover:border-gold/50"
+              className="group rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 border border-gold/20 hover:border-gold/50 bg-card"
             >
-              {/* Image */}
-              <div className="aspect-square overflow-hidden">
-                <ClickableImage 
-                  src={step.image}
-                  alt={step.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  showZoomIcon={false}
-                />
-              </div>
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
-              
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 pointer-events-none">
+              {/* Content First */}
+              <div className="p-5 md:p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
-                    <span className="font-serif text-lg font-bold text-primary-foreground">{index + 1}</span>
+                  <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center">
+                    <step.icon className="w-5 h-5 text-gold" />
                   </div>
-                  <h4 className="font-serif text-xl md:text-2xl font-bold text-foreground group-hover:text-gold transition-colors">
-                    {step.title}
+                  <h4 className="font-serif text-lg md:text-xl font-bold text-foreground">
+                    <span className="text-gold mr-2">{index + 1}.</span>{step.title}
                   </h4>
                 </div>
                 <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                   {step.description}
                 </p>
+              </div>
+
+              {/* Image After */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <ClickableImage 
+                  src={step.image}
+                  alt={step.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  showZoomIcon={false}
+                />
               </div>
             </div>
           ))}
