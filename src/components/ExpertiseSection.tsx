@@ -1,6 +1,8 @@
 import delhiNcrMap from "@/assets/delhi-ncr-map.png";
-import businessMeeting from "@/assets/business-meeting.jpg";
+import delhiNcr from "@/assets/delhi-ncr.jpg";
 import investingLand from "@/assets/investing-land.png";
+import cityMicromarket from "@/assets/city-micromarket.png";
+import indiaMapColorful from "@/assets/india-map-colorful.png";
 import { MapPin, Building, Award, TrendingUp } from "lucide-react";
 
 const expertisePoints = [
@@ -76,14 +78,36 @@ export default function ExpertiseSection() {
           <div className="relative">
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-card">
               <img
-                src={businessMeeting}
-                alt="Strategic Business Planning"
+                src={delhiNcr}
+                alt="Delhi NCR Skyline"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>
+          </div>
+        </div>
+
+        {/* Micro Market & India Map */}
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-10 md:mb-16">
+          <div className="rounded-lg overflow-hidden shadow-card border border-border">
+            <img
+              src={cityMicromarket}
+              alt="City Micro Market Analysis"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-card border border-border">
+            <img
+              src={indiaMapColorful}
+              alt="India Real Estate Markets"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 

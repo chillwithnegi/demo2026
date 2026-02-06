@@ -1,25 +1,33 @@
 import { Ruler, Search, PiggyBank, TrendingUp } from "lucide-react";
+import luxuryConstruction3 from "@/assets/luxury-construction-3.jpg";
+import developmentStrategy from "@/assets/development-strategy.png";
+import strategicAnalysis from "@/assets/strategic-analysis.png";
+import capitalDevelopment from "@/assets/capital-development-visual.png";
 
 const services = [
   {
     icon: Ruler,
     title: "Luxury Construction & Design",
     description: "High-end residential, commercial, golf courses, and premium landscape structures with cost optimisation",
+    image: luxuryConstruction3,
   },
   {
     icon: Search,
     title: "Development Strategy",
     description: "Highest & Best Use analysis, mixed-use planning, government approvals, and feasibility planning",
+    image: developmentStrategy,
   },
   {
     icon: PiggyBank,
     title: "Market Research & Valuation",
     description: "Macro-micro analysis, demand-supply assessment, project feasibility, and market worth evaluation",
+    image: strategicAnalysis,
   },
   {
     icon: TrendingUp,
     title: "Investment Advisory",
     description: "Real estate investment strategy, global markets perspective, and infrastructure-led growth identification",
+    image: capitalDevelopment,
   },
 ];
 
@@ -41,17 +49,30 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-background p-5 md:p-6 lg:p-8 rounded-lg border border-border hover:border-gold/50 transition-all duration-300"
+              className="bg-background rounded-lg border border-border hover:border-gold/50 transition-all duration-300 overflow-hidden group"
             >
-              <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-4 md:mb-6">
-                <service.icon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-gold" />
+              {/* Image */}
+              <div className="h-40 md:h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <h3 className="font-serif text-base md:text-lg lg:text-xl font-bold text-foreground mb-2 md:mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                {service.description}
-              </p>
+              {/* Content */}
+              <div className="p-5 md:p-6 lg:p-8">
+                <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-lg bg-gold/10 flex items-center justify-center mb-4 md:mb-6">
+                  <service.icon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-gold" />
+                </div>
+                <h3 className="font-serif text-base md:text-lg lg:text-xl font-bold text-foreground mb-2 md:mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
