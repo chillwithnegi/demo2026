@@ -1,7 +1,7 @@
 import { ChevronDown, Sparkles } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
 import landAcquisition from "@/assets/land-acquisition.png";
-import blueprintDesk from "@/assets/blueprint-desk.png";
+import developmentPlanning from "@/assets/smart-city-vision.png";
 import constructionSite from "@/assets/construction-site.png";
 import smartCityVision from "@/assets/smart-city-vision.png";
 
@@ -19,7 +19,7 @@ const processSteps = [
     title: "Development Planning", 
     subtitle: "Vision to Blueprint",
     description: "Crafting architectural masterpieces with regulatory excellence and value maximization",
-    image: blueprintDesk,
+    image: developmentPlanning,
     highlight: "World-Class Design"
   },
   { 
