@@ -1,5 +1,3 @@
-import { ClickableImage } from "@/components/ui/image-lightbox";
-
 const journeyItems = [
   {
     image: "/images/luxury-villa-pool.webp",
@@ -35,34 +33,65 @@ export default function JourneySection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {journeyItems.map((item, index) => (
+        {/* Top row: 2 cards side by side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-4 md:mb-6 lg:mb-8">
+          {journeyItems.slice(0, 2).map((item, index) => (
             <div
               key={index}
-              className="group relative aspect-[4/5] rounded-lg overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500"
+              className="group relative rounded-xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 bg-card border border-border"
             >
-              <ClickableImage
-                src={item.image}
-                alt={item.title}
-                width="380"
-                height="475"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                showZoomIcon={false}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-primary-foreground pointer-events-none">
-                <p className="text-gold-light text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 md:p-6">
+                <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
                   0{index + 1}
                 </p>
-                <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold mb-1 md:mb-2">
+                <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-1 md:mb-2">
                   {item.title}
                 </h3>
-                <p className="text-primary-foreground/80 text-xs md:text-sm leading-relaxed">
+                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom row: 1 large card full width */}
+        <div className="w-full">
+          <div className="group relative rounded-xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 bg-card border border-border">
+            <div className="aspect-[21/9] md:aspect-[3/1] overflow-hidden">
+              <img
+                src={journeyItems[2].image}
+                alt={journeyItems[2].title}
+                width="1200"
+                height="400"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-4 md:p-6 lg:p-8">
+              <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
+                03
+              </p>
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-1 md:mb-2">
+                {journeyItems[2].title}
+              </h3>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed max-w-2xl">
+                {journeyItems[2].description}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
