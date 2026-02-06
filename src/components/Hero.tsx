@@ -30,6 +30,10 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-20 md:py-24 lg:py-32">
         <div className="max-w-3xl animate-fade-up">
+          <p className="text-gold text-sm md:text-base font-semibold tracking-[0.3em] uppercase mb-4 md:mb-6">
+            This Is Our Story
+          </p>
+          
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-4 md:mb-6 whitespace-nowrap">
             From Land to Landmark
           </h1>
@@ -39,8 +43,8 @@ export default function Hero() {
           </h2>
           
           <p className="text-muted-foreground text-base md:text-lg lg:text-xl leading-relaxed mb-8 md:mb-10 max-w-2xl">
-            Transforming premium real estate through strategic construction and investment advisory. 
-            Luxury construction expertise meets global real estate strategy for maximum returns.
+            Every skyline we shape carries a piece of our soul. This isn't just business — 
+            it's a lifelong passion for turning raw earth into something extraordinary.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-10 md:mb-12">
@@ -48,13 +52,13 @@ export default function Hero() {
               href="#about"
               className="px-8 py-4 bg-gradient-gold text-primary-foreground font-semibold rounded-md shadow-gold hover:opacity-90 transition-all duration-300 text-center"
             >
-              Discover More
+              Begin Our Journey
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border-2 border-gold/50 text-foreground font-semibold rounded-md hover:bg-gold/10 transition-all duration-300 text-center"
             >
-              Start Your Journey
+              Feel The Vision
             </a>
           </div>
 

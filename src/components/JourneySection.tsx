@@ -5,18 +5,21 @@ import futureCity from "@/assets/future-city.png";
 const journeyItems = [
   {
     image: luxuryConstruction1,
-    title: "Premium Structures",
-    description: "High-end residential and commercial construction with uncompromising quality.",
+    emotion: "🏗️ The Passion",
+    title: "We Build With Our Heart",
+    description: "Every structure we raise carries the fire of our passion — hands-on, relentless, uncompromising craftsmanship.",
   },
   {
     image: luxuryVillaPool,
-    title: "Signature Landscapes",
-    description: "Golf courses, landscaped communities, and world-class amenities.",
+    emotion: "✨ The Pride",
+    title: "Creations That Make Us Proud",
+    description: "When we see families live in the beauty we imagined — that feeling is our greatest reward.",
   },
   {
     image: futureCity,
-    title: "Iconic Towers",
-    description: "Landmark high-rise developments that reshape skylines.",
+    emotion: "🌆 The Dream",
+    title: "We Dream In Skylines",
+    description: "Every city we envision starts as a feeling — a burning desire to reshape what's possible.",
   },
 ];
 
@@ -26,14 +29,14 @@ export default function JourneySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Our Portfolio
+            💫 Our Emotional Journey
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            A Journey Through Luxury Construction
+            Built With Passion, Driven By Purpose
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
           <p className="text-muted-foreground text-sm md:text-base lg:text-lg max-w-2xl mx-auto">
-            Experience our legacy of crafting exceptional spaces that transcend expectations.
+            This isn't just construction — it's our life's work, our obsession, our way of leaving a mark on the world.
           </p>
         </div>
 
@@ -57,7 +60,7 @@ export default function JourneySection() {
               </div>
               <div className="p-4 md:p-6">
                 <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
-                  0{index + 1}
+                  {item.emotion}
                 </p>
                 <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-1 md:mb-2">
                   {item.title}
@@ -86,7 +89,7 @@ export default function JourneySection() {
             </div>
             <div className="p-4 md:p-6 lg:p-8">
               <p className="text-gold text-xs font-semibold tracking-wider uppercase mb-1 md:mb-2">
-                03
+                {journeyItems[2].emotion}
               </p>
               <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-1 md:mb-2">
                 {journeyItems[2].title}

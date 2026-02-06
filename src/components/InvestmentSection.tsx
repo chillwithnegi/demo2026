@@ -5,18 +5,21 @@ import hospitality from "@/assets/hospitality.jpg";
 const investments = [
   {
     image: residential,
-    title: "Residential Excellence",
-    description: "Premium developments that command premium prices and generate superior returns.",
+    emotion: "🏡 The Joy of Home",
+    title: "Where Families Find Happiness",
+    description: "Every home we create carries the warmth of our intention — spaces where life's best moments unfold.",
   },
   {
     image: commercialAtrium,
-    title: "Commercial Growth",
-    description: "Office and retail spaces positioned in emerging corridors for appreciation.",
+    emotion: "📈 The Thrill of Growth",
+    title: "Spaces That Empower Ambition",
+    description: "Watching businesses thrive in our commercial spaces fills us with the same excitement we felt on day one.",
   },
   {
     image: hospitality,
-    title: "Hospitality Returns",
-    description: "High-end hospitality projects with consistent revenue streams.",
+    emotion: "🌟 The Art of Welcome",
+    title: "Experiences That Touch Hearts",
+    description: "Hospitality is about emotion — creating spaces where every guest feels the care we poured into every detail.",
   },
 ];
 
@@ -26,10 +29,10 @@ export default function InvestmentSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Investment Types
+            🎯 What Drives Us
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            From Investment to Wealth
+            Every Investment Carries Emotion
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
         </div>
@@ -51,6 +54,9 @@ export default function InvestmentSection() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-90" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-primary-foreground">
+                <p className="text-gold-light text-xs font-semibold tracking-wider mb-2">
+                  {item.emotion}
+                </p>
                 <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3">
                   {item.title}
                 </h3>

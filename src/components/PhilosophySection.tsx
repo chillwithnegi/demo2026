@@ -10,22 +10,22 @@ const philosophyItems = [
     icon: MapPinned,
     number: "1",
     title: "Prime Land",
-    subtitle: "Strategic Locations",
-    description: "Strategic locations with development potential and market demand",
+    subtitle: "Where Dreams Begin",
+    description: "We feel it in our bones — the right location speaks to us before the numbers ever do.",
   },
   {
     icon: Banknote,
     number: "2",
     title: "Capital Deployment",
-    subtitle: "Optimal Structuring",
-    description: "Optimal investment structuring and financial engineering",
+    subtitle: "Fuel For The Fire",
+    description: "Money isn't just capital — it's the fuel that turns our burning vision into reality.",
   },
   {
     icon: Lightbulb,
     number: "3",
     title: "Execution Strategy",
-    subtitle: "Market Timing",
-    description: "Market timing, development planning, and value maximization",
+    subtitle: "The Winning Instinct",
+    description: "Timing, planning, and that gut feeling — the instinct that separates dreamers from creators.",
   },
 ];
 
@@ -33,22 +33,22 @@ const wealthStrategies = [
   {
     icon: Target,
     number: "1",
-    title: "Strategic Planning",
-    description: "Comprehensive market analysis and development feasibility studies that identify high-potential opportunities before they become obvious to the market.",
+    title: "The Visionary's Eye",
+    description: "We see what others miss. Before opportunity becomes obvious, we've already felt it, studied it, and committed to it with conviction.",
     image: strategicPlanning,
   },
   {
     icon: Zap,
     number: "2",
-    title: "Execution Excellence",
-    description: "Hands-on project management from concept to completion, ensuring every detail aligns with the wealth creation strategy and timeline.",
+    title: "The Builder's Obsession",
+    description: "From concept to completion, we pour our heart into every detail. This isn't project management — it's a personal mission to create perfection.",
     image: wealthCreationJourney,
   },
   {
     icon: TrendingUp,
     number: "3",
-    title: "Value Multiplication",
-    description: "Systematic approach to enhancing asset value through strategic improvements, market positioning, and optimal exit timing.",
+    title: "The Wealth Creator's Pride",
+    description: "Watching value multiply isn't just satisfying — it's the proof that passion, patience, and strategy together create extraordinary outcomes.",
     image: corePortfolioInvestor,
   },
 ];
@@ -59,10 +59,10 @@ export default function PhilosophySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
           <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            Our Approach
+            💡 What We Believe
           </p>
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            Our Core Philosophy
+            The Conviction That Drives Us
           </h2>
           <div className="divider-gold mb-4 md:mb-6" />
           <p className="text-lg md:text-xl lg:text-2xl font-serif text-foreground/80 max-w-2xl mx-auto">
@@ -111,7 +111,7 @@ export default function PhilosophySection() {
             Land + Money + Strategy
           </h3>
           <p className="text-center text-base md:text-lg lg:text-xl text-foreground leading-relaxed">
-            We're not brokers. We're <span className="font-serif font-bold text-gold">wealth creators</span> who execute strategic plans that transform real estate into generational prosperity.
+            We're not brokers. We're <span className="font-serif font-bold text-gold">wealth creators</span> who pour our soul into every project, turning real estate into generational prosperity.
           </p>
         </div>
 

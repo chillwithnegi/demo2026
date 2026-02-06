@@ -2,11 +2,11 @@ import { Search, Calculator, FileText, HardHat, Users } from "lucide-react";
 import sixStepProcess from "@/assets/six-step-process.png";
 
 const solutions = [
-  { icon: Search, text: "Market research and site selection" },
-  { icon: Calculator, text: "Financial structuring and capital sourcing" },
-  { icon: FileText, text: "Development planning and approvals" },
-  { icon: HardHat, text: "Construction management and quality control" },
-  { icon: Users, text: "Marketing strategy and sales execution" },
+  { icon: Search, text: "Deep market research — driven by curiosity" },
+  { icon: Calculator, text: "Financial structuring — built on trust" },
+  { icon: FileText, text: "Development planning — fuelled by vision" },
+  { icon: HardHat, text: "Construction management — powered by obsession" },
+  { icon: Users, text: "Sales execution — guided by empathy" },
 ];
 
 export default function SolutionsSection() {
@@ -18,15 +18,15 @@ export default function SolutionsSection() {
           <div className="order-2 lg:order-1">
             <div className="mb-8 md:mb-12">
               <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-                Execution AND Planning
+                🎯 Our Complete Commitment
               </p>
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6">
-                The Complete Solution
+                We Don't Just Plan — We Feel It Through
               </h2>
               <div className="divider-gold !mx-0 mb-6 md:mb-8" />
               <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed">
-                True wealth creation demands both visionary planning and meticulous execution. 
-                We provide integrated services that span the entire investment lifecycle.
+                True wealth creation demands more than skill — it demands soul. 
+                We bring our whole selves to every project, from first vision to final handover.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function SolutionsSection() {
             <div className="relative rounded-lg overflow-hidden shadow-elegant border border-border">
               <img
                 src={sixStepProcess}
-                alt="Six Step Process - Complete Solution"
+                alt="Six Step Process - Our Complete Journey"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"
