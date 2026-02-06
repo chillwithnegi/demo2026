@@ -1,6 +1,6 @@
 const journeyItems = [
   {
-    image: "/images/luxury-villa-pool.webp",
+    image: "/images/premium-structures.png",
     title: "Premium Structures",
     description: "High-end residential and commercial construction with uncompromising quality.",
   },
