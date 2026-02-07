@@ -1,8 +1,3 @@
-import delhiNcrMap from "@/assets/delhi-ncr-map.png";
-import delhiNcr from "@/assets/delhi-ncr.jpg";
-import investingLand from "@/assets/investing-land.png";
-import cityMicromarket from "@/assets/city-micromarket.png";
-import indiaMapColorful from "@/assets/india-map-colorful.png";
 import { MapPin, Building, Award, TrendingUp } from "lucide-react";
 
 const expertisePoints = [
@@ -26,12 +21,12 @@ export default function ExpertiseSection() {
           <div className="divider-gold mb-4 md:mb-6" />
         </div>
 
-        {/* Main Image - Delhi NCR Map */}
+        {/* Main Image - WXM Branded */}
         <div className="mb-10 md:mb-16">
           <div className="relative rounded-lg overflow-hidden shadow-card">
             <img
-              src={delhiNcrMap}
-              alt="Delhi NCR — Our Home Ground"
+              src="/images/new-24.jpeg"
+              alt="Wealth X Multiplier — Delhi NCR Strategy"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -78,8 +73,8 @@ export default function ExpertiseSection() {
           <div className="relative">
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-card">
               <img
-                src={delhiNcr}
-                alt="Delhi NCR Skyline — Our Canvas"
+                src="/images/new-27.jpeg"
+                alt="Wealth X Multiplier — Our Canvas"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -89,12 +84,12 @@ export default function ExpertiseSection() {
           </div>
         </div>
 
-        {/* Micro Market & India Map */}
+        {/* Additional WXM Branded Images */}
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-10 md:mb-16">
           <div className="rounded-lg overflow-hidden shadow-card border border-border">
             <img
-              src={cityMicromarket}
-              alt="The Details We Obsess Over"
+              src="/images/new-29.jpeg"
+              alt="Wealth X Multiplier — Market Analysis"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -102,8 +97,8 @@ export default function ExpertiseSection() {
           </div>
           <div className="rounded-lg overflow-hidden shadow-card border border-border">
             <img
-              src={indiaMapColorful}
-              alt="India — Our Nation, Our Pride"
+              src="/images/new-31.jpeg"
+              alt="Wealth X Multiplier — Regional Strategy"
               className="w-full h-auto object-cover"
               loading="lazy"
               decoding="async"
@@ -140,12 +135,12 @@ export default function ExpertiseSection() {
             </div>
           </div>
 
-          {/* Investing in Land Infographic */}
+          {/* Investing Strategy Image */}
           <div className="mt-8 md:mt-12">
             <div className="rounded-lg overflow-hidden shadow-card">
               <img
-                src={investingLand}
-                alt="The Emotion of Investing in Land"
+                src="/images/new-34.jpeg"
+                alt="Wealth X Multiplier — Investment Strategy"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"

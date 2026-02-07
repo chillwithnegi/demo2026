@@ -1,11 +1,5 @@
 import { MapPin, Building, Users, TrendingUp, ChevronRight, ChevronDown } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import investingLand from "@/assets/investing-land.png";
-import marketWorld from "@/assets/market-world.png";
-import marketCountry from "@/assets/market-country.png";
-import marketCity from "@/assets/market-city.png";
-import marketMicromarket from "@/assets/market-micromarket.png";
-import marketExactProperty from "@/assets/market-exact-property.png";
 
 const precisionPoints = [
   {
@@ -31,11 +25,11 @@ const precisionPoints = [
 ];
 
 const marketTiles = [
-  { label: "World", image: marketWorld },
-  { label: "Country", image: marketCountry },
-  { label: "City", image: marketCity },
-  { label: "Micro Market", image: marketMicromarket },
-  { label: "Exact Property", image: marketExactProperty },
+  { label: "World", image: "/images/new-02.jpeg" },
+  { label: "Country", image: "/images/new-03.jpeg" },
+  { label: "City", image: "/images/new-04.jpeg" },
+  { label: "Micro Market", image: "/images/new-05.jpeg" },
+  { label: "Exact Property", image: "/images/new-06.jpeg" },
 ];
 
 export default function PrecisionSection() {
@@ -62,8 +56,8 @@ export default function PrecisionSection() {
         <div className="mb-16 md:mb-20">
           <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-elegant border border-gold/20">
             <ClickableImage 
-              src={investingLand} 
-              alt="Investing in Land - Virtual and Physical Land Strategy" 
+              src="/images/new-01.jpeg"
+              alt="Wealth X Multiplier - Strategic Vision" 
               className="w-full h-auto object-contain"
             />
           </div>

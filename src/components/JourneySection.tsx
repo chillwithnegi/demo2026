@@ -1,22 +1,18 @@
-import luxuryConstruction1 from "@/assets/luxury-construction-1.jpg";
-import luxuryVillaPool from "@/assets/luxury-villa-pool.png";
-import futureCity from "@/assets/future-city.png";
-
 const journeyItems = [
   {
-    image: luxuryConstruction1,
+    image: "/images/new-33.jpeg",
     emotion: "🏗️ The Passion",
     title: "We Build With Our Heart",
     description: "Every structure we raise carries the fire of our passion — hands-on, relentless, uncompromising craftsmanship.",
   },
   {
-    image: luxuryVillaPool,
+    image: "/images/new-40.jpeg",
     emotion: "✨ The Pride",
     title: "Creations That Make Us Proud",
     description: "When we see families live in the beauty we imagined — that feeling is our greatest reward.",
   },
   {
-    image: futureCity,
+    image: "/images/new-12.jpeg",
     emotion: "🌆 The Dream",
     title: "We Dream In Skylines",
     description: "Every city we envision starts as a feeling — a burning desire to reshape what's possible.",

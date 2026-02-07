@@ -1,7 +1,4 @@
 import { Building2, TrendingUp, Handshake } from "lucide-react";
-import wealthMultiplierBuilding from "@/assets/wealth-multiplier-building.png";
-import blueprintDesk from "@/assets/blueprint-desk.png";
-import globalStrategyIdea from "@/assets/global-strategy-idea.jpg";
 
 const opportunities = [
   {
@@ -9,21 +6,21 @@ const opportunities = [
     emotion: "🌱 The Excitement of Creation",
     title: "Building From Ground Up",
     description: "Nothing matches the rush of watching raw land transform under our hands — pure creative energy.",
-    image: wealthMultiplierBuilding,
+    image: "/images/new-13.jpeg",
   },
   {
     icon: TrendingUp,
     emotion: "🔍 The Thrill of Discovery",
     title: "Unlocking Hidden Potential",
     description: "Finding value where others see nothing — that detective instinct that keeps our passion alive.",
-    image: blueprintDesk,
+    image: "/images/new-14.jpeg",
   },
   {
     icon: Handshake,
     emotion: "🤝 The Power of Trust",
     title: "Partnerships Built On Faith",
     description: "When two visions align, magic happens — shared risk, shared dreams, shared triumph.",
-    image: globalStrategyIdea,
+    image: "/images/new-16.jpeg",
   },
 ];
 

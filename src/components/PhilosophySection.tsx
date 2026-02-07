@@ -1,9 +1,5 @@
 import { MapPinned, Banknote, Lightbulb, Target, Zap, TrendingUp } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import corePortfolio from "@/assets/core-portfolio.png";
-import strategicPlanning from "@/assets/strategic-planning.png";
-import wealthCreationJourney from "@/assets/wealth-creation-journey.png";
-import corePortfolioInvestor from "@/assets/core-portfolio-investor.png";
 
 const philosophyItems = [
   {
@@ -35,21 +31,21 @@ const wealthStrategies = [
     number: "1",
     title: "The Visionary's Eye",
     description: "We see what others miss. Before opportunity becomes obvious, we've already felt it, studied it, and committed to it with conviction.",
-    image: strategicPlanning,
+    image: "/images/new-08.jpeg",
   },
   {
     icon: Zap,
     number: "2",
     title: "The Builder's Obsession",
     description: "From concept to completion, we pour our heart into every detail. This isn't project management — it's a personal mission to create perfection.",
-    image: wealthCreationJourney,
+    image: "/images/new-09.jpeg",
   },
   {
     icon: TrendingUp,
     number: "3",
     title: "The Wealth Creator's Pride",
     description: "Watching value multiply isn't just satisfying — it's the proof that passion, patience, and strategy together create extraordinary outcomes.",
-    image: corePortfolioInvestor,
+    image: "/images/new-10.jpeg",
   },
 ];
 
@@ -74,7 +70,7 @@ export default function PhilosophySection() {
         <div className="mb-10 md:mb-16">
           <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-card">
             <img
-              src={corePortfolio}
+              src="/images/new-07.jpeg"
               alt="The Investor Core Portfolio"
               className="w-full h-auto object-cover"
               loading="lazy"

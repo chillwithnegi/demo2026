@@ -1,9 +1,5 @@
 import { ChevronDown, Sparkles } from "lucide-react";
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import landAcquisition from "@/assets/land-acquisition.png";
-import developmentPlanning from "@/assets/smart-city-vision.png";
-import constructionSite from "@/assets/construction-site.png";
-import completionCity from "@/assets/completion-city.png";
 
 const processSteps = [
   { 
@@ -11,7 +7,7 @@ const processSteps = [
     title: "The Spark", 
     subtitle: "Where It Begins",
     description: "Standing on raw land, feeling its potential pulse through us — this is where every great story starts. We don't just see soil, we see futures.",
-    image: landAcquisition,
+    image: "/images/new-37.jpeg",
     highlight: "💫 The Beginning"
   },
   { 
@@ -19,7 +15,7 @@ const processSteps = [
     title: "The Vision Takes Shape", 
     subtitle: "Blueprint of a Dream",
     description: "Turning emotion into architecture, feelings into floor plans — this is where our heart meets the engineer's mind.",
-    image: developmentPlanning,
+    image: "/images/new-28.jpeg",
     highlight: "🎨 The Imagination"
   },
   { 
@@ -27,7 +23,7 @@ const processSteps = [
     title: "The Relentless Grind", 
     subtitle: "Blood, Sweat & Steel",
     description: "Every beam placed, every wall raised — this is our love language. Construction isn't labour, it's an act of devotion.",
-    image: constructionSite,
+    image: "/images/new-15.jpeg",
     highlight: "🔥 The Dedication"
   },
   { 
@@ -35,7 +31,7 @@ const processSteps = [
     title: "The Triumph", 
     subtitle: "A Landmark Is Born",
     description: "That moment when a vision becomes a skyline — the overwhelming pride of creating something that will outlast us.",
-    image: completionCity,
+    image: "/images/new-30.jpeg",
     highlight: "🏆 The Glory"
   },
 ];

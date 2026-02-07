@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-skyline.webp"
+          src="/images/new-35.jpeg"
           alt="Premium Real Estate Skyline"
           width="1920"
           height="1080"

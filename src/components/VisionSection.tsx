@@ -1,5 +1,3 @@
-import founderPortrait from "@/assets/founder-portrait.jpg";
-
 export default function VisionSection() {
   return (
     <section id="about" className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
@@ -9,7 +7,7 @@ export default function VisionSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-card">
               <img
-                src={founderPortrait}
+                src="/images/new-19.jpeg"
                 alt="The Beginning of a Dream"
                 className="w-full h-full object-cover"
                 loading="lazy"

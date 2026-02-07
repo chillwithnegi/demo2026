@@ -1,5 +1,4 @@
 import { MapPin, Globe } from "lucide-react";
-import cityWireframeDark from "@/assets/city-wireframe-dark.png";
 
 export default function CTASection() {
   return (
@@ -7,7 +6,7 @@ export default function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={cityWireframeDark}
+          src="/images/new-39.jpeg"
           alt=""
           className="w-full h-full object-cover opacity-20"
           loading="lazy"
