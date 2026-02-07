@@ -1,51 +1,18 @@
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import luxuryConstruction from "@/assets/luxury-construction.png";
-import luxuryConstruction2 from "@/assets/luxury-construction-2.jpg";
-import commercial from "@/assets/commercial.jpg";
-import primeLandVisual from "@/assets/prime-land-visual.png";
-import exactProperty from "@/assets/exact-property.png";
-import worldGlobeColorful from "@/assets/world-globe-colorful.png";
-import worldMapColorful from "@/assets/world-map-colorful.png";
-import cityWireframe from "@/assets/city-wireframe.png";
-import heroSkyline from "@/assets/hero-skyline.png";
-import waterfall from "@/assets/waterfall-bar.png";
-import indiaMap from "@/assets/india-map.png";
-import worldGlobe from "@/assets/world-globe.png";
-import worldMap from "@/assets/world-map.png";
-import residentialAerial from "@/assets/residential-aerial.png";
-import luxuryInterior from "@/assets/luxury-interior.png";
-import wealthJourney from "@/assets/wealth-journey.png";
 
 const galleryItems = [
   // THE PASSION — Our love for building
-  { src: luxuryConstruction, alt: "The Passion of Building Excellence", emotion: "🔥 The Passion" },
-  { src: luxuryConstruction2, alt: "Craftsmanship That Comes From Love", emotion: "🔥 The Passion" },
+  { src: "/images/new-36.jpeg", alt: "Wealth X Multiplier — The Passion of Building Excellence", emotion: "🔥 The Passion" },
+  { src: "/images/new-41.jpeg", alt: "Wealth X Multiplier — Craftsmanship That Comes From Love", emotion: "🔥 The Passion" },
   
   // THE DREAM — Our vision for the future
-  { src: heroSkyline, alt: "Skylines We Dream About", emotion: "🌆 The Dream" },
-  { src: cityWireframe, alt: "Blueprints Born From Imagination", emotion: "🌆 The Dream" },
+  { src: "/images/new-31.jpeg", alt: "Wealth X Multiplier — Skylines We Dream About", emotion: "🌆 The Dream" },
+  { src: "/images/new-34.jpeg", alt: "Wealth X Multiplier — Blueprints Born From Imagination", emotion: "🌆 The Dream" },
   
   // THE PRIDE — What makes us proud
-  { src: luxuryInterior, alt: "Interiors That Reflect Our Soul", emotion: "✨ The Pride" },
-  { src: waterfall, alt: "Details That Take Our Breath Away", emotion: "✨ The Pride" },
-  { src: residentialAerial, alt: "Communities We're Proud To Create", emotion: "✨ The Pride" },
-  
-  // THE AMBITION — Global thinking
-  { src: worldGlobeColorful, alt: "Dreaming Without Borders", emotion: "🌍 The Ambition" },
-  { src: worldMapColorful, alt: "Our Reach, Our Aspiration", emotion: "🌍 The Ambition" },
-  { src: worldGlobe, alt: "A Global Perspective, A Local Heart", emotion: "🌍 The Ambition" },
-  { src: worldMap, alt: "Markets That Inspire Our Journey", emotion: "🌍 The Ambition" },
-  
-  // THE ROOTS — Where we belong
-  { src: indiaMap, alt: "India — Where Our Story Began", emotion: "🏠 The Roots" },
-  { src: commercial, alt: "Commercial Spaces We Believe In", emotion: "🏠 The Roots" },
-  
-  // THE FOCUS — Our strategic eye
-  { src: primeLandVisual, alt: "Land That Speaks To Us", emotion: "🎯 The Focus" },
-  { src: exactProperty, alt: "Precision That Defines Us", emotion: "🎯 The Focus" },
-  
-  // THE LEGACY — What we leave behind
-  { src: wealthJourney, alt: "A Legacy of Wealth Creation", emotion: "🏆 The Legacy" },
+  { src: "/images/new-29.jpeg", alt: "Wealth X Multiplier — Interiors That Reflect Our Soul", emotion: "✨ The Pride" },
+  { src: "/images/new-27.jpeg", alt: "Wealth X Multiplier — Details That Take Our Breath Away", emotion: "✨ The Pride" },
+  { src: "/images/new-24.jpeg", alt: "Wealth X Multiplier — Communities We're Proud To Create", emotion: "✨ The Pride" },
 ];
 
 export default function PortfolioGallery() {

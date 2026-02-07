@@ -1,5 +1,4 @@
 import { Search, Calculator, FileText, HardHat, Users } from "lucide-react";
-import sixStepProcess from "@/assets/six-step-process.png";
 
 const solutions = [
   { icon: Search, text: "Deep market research — driven by curiosity" },
@@ -49,8 +48,8 @@ export default function SolutionsSection() {
           <div className="order-1 lg:order-2">
             <div className="relative rounded-lg overflow-hidden shadow-elegant border border-border">
               <img
-                src={sixStepProcess}
-                alt="Six Step Process - Our Complete Journey"
+                src="/images/new-11.jpeg"
+                alt="Our Complete Process — Wealth X Multiplier"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"

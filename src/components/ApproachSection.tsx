@@ -1,5 +1,4 @@
 import { ClickableImage } from "@/components/ui/image-lightbox";
-import landMoneyStrategy from "@/assets/land-money-strategy.png";
 
 export default function ApproachSection() {
   return (
@@ -19,8 +18,8 @@ export default function ApproachSection() {
         <div className="mb-0">
           <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20 bg-card">
             <ClickableImage 
-              src={landMoneyStrategy} 
-              alt="Land Money Strategy - The Success Triangle" 
+              src="/images/new-17.jpeg"
+              alt="Wealth X Multiplier - The Success Formula" 
               className="w-full h-auto object-cover"
             />
           </div>

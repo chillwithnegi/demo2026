@@ -1,8 +1,4 @@
 import { Ruler, Search, PiggyBank, TrendingUp } from "lucide-react";
-import luxuryConstruction3 from "@/assets/luxury-construction-3.jpg";
-import developmentStrategy from "@/assets/development-strategy.png";
-import strategicAnalysis from "@/assets/strategic-analysis.png";
-import capitalDevelopment from "@/assets/capital-development-visual.png";
 
 const services = [
   {
@@ -10,28 +6,28 @@ const services = [
     emotion: "🏛️ The Craftsman's Devotion",
     title: "Luxury Construction & Design",
     description: "Every line we draw, every material we choose — it's a love letter to excellence and perfection.",
-    image: luxuryConstruction3,
+    image: "/images/new-18.jpeg",
   },
   {
     icon: Search,
     emotion: "🧠 The Strategist's Intuition",
     title: "Development Strategy",
     description: "That moment when data meets instinct — when we know, deep inside, that this is the right move.",
-    image: developmentStrategy,
+    image: "/images/new-21.jpeg",
   },
   {
     icon: PiggyBank,
     emotion: "🔬 The Analyst's Curiosity",
     title: "Market Research & Valuation",
     description: "The relentless curiosity to understand every market breath — because knowledge is our greatest weapon.",
-    image: strategicAnalysis,
+    image: "/images/new-22.jpeg",
   },
   {
     icon: TrendingUp,
     emotion: "🌍 The Advisor's Responsibility",
     title: "Investment Advisory",
     description: "When someone trusts us with their wealth, we feel the weight of that trust in every recommendation.",
-    image: capitalDevelopment,
+    image: "/images/new-23.jpeg",
   },
 ];
 

@@ -1,5 +1,3 @@
-import visionPortrait from "@/assets/vision-portrait.png";
-import executionStrategyVisual from "@/assets/execution-strategy-visual.png";
 import { Award, GraduationCap, Briefcase, Globe } from "lucide-react";
 
 const credentials = [
@@ -54,7 +52,7 @@ export default function FounderSection() {
           <div className="relative">
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-gold/20 shadow-elegant">
               <img
-                src={visionPortrait}
+                src="/images/new-26.jpeg"
                 alt="The Person Behind The Vision"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -70,8 +68,8 @@ export default function FounderSection() {
         {/* Execution Strategy Visual */}
         <div className="rounded-lg overflow-hidden shadow-elegant border border-gold/20">
           <img
-            src={executionStrategyVisual}
-            alt="How I Execute With Passion"
+            src="/images/new-38.jpeg"
+            alt="Wealth X Multiplier — Execution With Passion"
             className="w-full h-auto object-cover"
             loading="lazy"
             decoding="async"

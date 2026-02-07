@@ -1,22 +1,18 @@
-import residential from "@/assets/residential.jpg";
-import commercialAtrium from "@/assets/commercial-atrium.png";
-import hospitality from "@/assets/hospitality.jpg";
-
 const investments = [
   {
-    image: residential,
+    image: "/images/new-32.jpeg",
     emotion: "🏡 The Joy of Home",
     title: "Where Families Find Happiness",
     description: "Every home we create carries the warmth of our intention — spaces where life's best moments unfold.",
   },
   {
-    image: commercialAtrium,
+    image: "/images/new-25.jpeg",
     emotion: "📈 The Thrill of Growth",
     title: "Spaces That Empower Ambition",
     description: "Watching businesses thrive in our commercial spaces fills us with the same excitement we felt on day one.",
   },
   {
-    image: hospitality,
+    image: "/images/new-20.jpeg",
     emotion: "🌟 The Art of Welcome",
     title: "Experiences That Touch Hearts",
     description: "Hospitality is about emotion — creating spaces where every guest feels the care we poured into every detail.",
