@@ -1,57 +1,26 @@
 export default function VisionSection() {
   return (
-    <section id="about" className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-          {/* Image */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-card">
-              <img
-                src="/images/slide-02.jpeg"
-                alt="Wealth X Multiplier — Vision Meets Precision"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
-            </div>
-            {/* Decorative Element */}
-            <div className="hidden md:block absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 w-24 h-24 lg:w-32 lg:h-32 border-2 border-gold/30 rounded-lg -z-10" />
-            <div className="hidden md:block absolute -top-4 -left-4 lg:-top-6 lg:-left-6 w-16 h-16 lg:w-24 lg:h-24 bg-gold/10 rounded-lg -z-10" />
-          </div>
-
-          {/* Content */}
-          <div className="order-1 lg:order-2">
-            <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-              🔥 Where It All Began
-            </p>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight whitespace-nowrap">
-              Where Vision Meets Precision
-            </h2>
-            <div className="divider-gold !mx-0 mb-6 md:mb-8" />
-            
-            {/* MBA Emphasis */}
-            <div className="mb-6 p-4 md:p-6 rounded-lg bg-gold/5 border border-gold/20">
-              <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-gold mb-2">
-                MBA in Real Estate & Urban Infrastructure
-              </h3>
-              <p className="text-muted-foreground text-sm md:text-base">
-                from RICS School of Built Environment
-              </p>
-            </div>
-            
-            <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
-              <span className="text-foreground font-medium">A Civil Engineer by passion</span>, shaped by hands-on luxury construction — 
-              every brick laid taught me the art of turning raw land into living dreams.
-            </p>
-            
-            <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed font-medium">
-              I don't just deal in property. I define <span className="text-gold">what</span> should be built on your land, 
-              <span className="text-gold"> where</span> it should be built, <span className="text-gold">why</span> it should be built, 
-              and <span className="text-gold">how</span> it should generate maximum returns.
-            </p>
-          </div>
-        </div>
+    <section id="about" className="relative w-full min-h-[80vh] md:min-h-screen flex items-end overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/images/slide-02.jpeg"
+          alt="Wealth X Multiplier — Vision Meets Precision"
+          className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+      </div>
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 pb-10 md:pb-16 lg:pb-20">
+        <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-2">
+          Where It All Began
+        </p>
+        <h2 className="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+          Where Vision Meets Precision
+        </h2>
+        <p className="text-white/80 text-sm md:text-base max-w-xl">
+          A Civil Engineer by passion, MBA (RICS) by conviction — turning raw land into living dreams.
+        </p>
       </div>
     </section>
   );
