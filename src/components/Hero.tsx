@@ -1,16 +1,7 @@
-import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react";
-
-const socialLinks = [
-  { icon: MessageCircle, href: "#", label: "WhatsApp" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-];
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Full Background Image */}
+    <section className="relative w-full min-h-screen flex items-end justify-center overflow-hidden">
+      {/* Full Background Image — Maximum Visibility */}
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero-main.jpeg"
@@ -22,62 +13,19 @@ export default function Hero() {
           decoding="async"
           fetchPriority="high"
         />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
+        {/* Very subtle bottom gradient only for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-20 md:py-24 lg:py-32">
-        <div className="max-w-3xl animate-fade-up">
-          <p className="text-gold text-sm md:text-base font-semibold tracking-[0.3em] uppercase mb-4 md:mb-6">
-            This Is Our Story
-          </p>
-          
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-4 md:mb-6 whitespace-nowrap">
+      {/* Minimal Text — Presentation Style */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 pb-12 md:pb-16 lg:pb-20">
+        <div className="animate-fade-up text-center">
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-2 md:mb-3 drop-shadow-lg">
             From Land to Landmark
           </h1>
-          
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gold leading-tight mb-6 md:mb-8 whitespace-nowrap">
+          <h2 className="font-serif text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gold leading-tight drop-shadow-lg">
             From Investment to Wealth
           </h2>
-          
-          <p className="text-muted-foreground text-base md:text-lg lg:text-xl leading-relaxed mb-8 md:mb-10 max-w-2xl">
-            Every skyline we shape carries a piece of our soul. This isn't just business — 
-            it's a lifelong passion for turning raw earth into something extraordinary.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-10 md:mb-12">
-            <a
-              href="#about"
-              className="px-8 py-4 bg-gradient-gold text-primary-foreground font-semibold rounded-md shadow-gold hover:opacity-90 transition-all duration-300 text-center"
-            >
-              Begin Our Journey
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 border-2 border-gold/50 text-foreground font-semibold rounded-md hover:bg-gold/10 transition-all duration-300 text-center"
-            >
-              Feel The Vision
-            </a>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            <span className="text-muted-foreground text-sm">Connect with us:</span>
-            <div className="flex gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
