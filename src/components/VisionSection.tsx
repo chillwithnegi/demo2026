@@ -7,8 +7,8 @@ export default function VisionSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-card">
               <img
-                src="/images/new-19.jpeg"
-                alt="The Beginning of a Dream"
+                src="/images/slide-02.jpeg"
+                alt="Wealth X Multiplier — Vision Meets Precision"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
