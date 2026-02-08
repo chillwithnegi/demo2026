@@ -13,8 +13,8 @@ export default function Hero() {
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/new-35.jpeg"
-          alt="Premium Real Estate Skyline"
+          src="/images/hero-main.jpeg"
+          alt="Wealth X Multiplier — Premium Luxury Estate"
           width="1920"
           height="1080"
           className="w-full h-full object-cover"
