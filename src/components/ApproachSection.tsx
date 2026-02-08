@@ -2,32 +2,23 @@ import { ClickableImage } from "@/components/ui/image-lightbox";
 
 export default function ApproachSection() {
   return (
-    <section className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-background">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            🧬 The DNA of Our Success
-          </p>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            The Formula We Live By
-          </h2>
-          <div className="divider-gold mb-4 md:mb-6" />
-        </div>
+    <section className="bg-background">
+      <div className="py-8 md:py-12 text-center px-4">
+        <h2 className="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          The Formula We Live By
+        </h2>
+        <p className="text-gold text-sm md:text-base mt-2">
+          Land + Money + Strategy = Wealth That Lasts Generations
+        </p>
+      </div>
 
-        {/* Land + Money + Strategy Infographic */}
-        <div className="mb-0">
-          <div className="rounded-2xl overflow-hidden shadow-elegant border border-gold/20 bg-card">
-            <ClickableImage 
-              src="/images/new-17.jpeg"
-              alt="Wealth X Multiplier - The Success Formula" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <p className="text-center text-muted-foreground mt-4 text-sm md:text-base">
-            This isn't just a formula — it's the heartbeat of everything we do: <span className="text-gold font-semibold">Land</span> + <span className="text-gold font-semibold">Money</span> + <span className="text-gold font-semibold">Strategy</span> = Wealth That Lasts Generations
-          </p>
-          <p className="text-center text-muted-foreground text-xs mt-2">Click image to enlarge</p>
-        </div>
+      {/* Full-width clickable infographic */}
+      <div className="w-full">
+        <ClickableImage
+          src="/images/new-17.jpeg"
+          alt="Wealth X Multiplier — The Success Formula"
+          className="w-full h-auto object-contain"
+        />
       </div>
     </section>
   );

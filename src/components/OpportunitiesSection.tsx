@@ -1,79 +1,38 @@
-import { Building2, TrendingUp, Handshake } from "lucide-react";
-
 const opportunities = [
-  {
-    icon: Building2,
-    emotion: "🌱 The Excitement of Creation",
-    title: "Building From Ground Up",
-    description: "Nothing matches the rush of watching raw land transform under our hands — pure creative energy.",
-    image: "/images/new-13.jpeg",
-  },
-  {
-    icon: TrendingUp,
-    emotion: "🔍 The Thrill of Discovery",
-    title: "Unlocking Hidden Potential",
-    description: "Finding value where others see nothing — that detective instinct that keeps our passion alive.",
-    image: "/images/new-14.jpeg",
-  },
-  {
-    icon: Handshake,
-    emotion: "🤝 The Power of Trust",
-    title: "Partnerships Built On Faith",
-    description: "When two visions align, magic happens — shared risk, shared dreams, shared triumph.",
-    image: "/images/new-16.jpeg",
-  },
+  { image: "/images/new-13.jpeg", label: "🌱 Creation", title: "Building From Ground Up" },
+  { image: "/images/new-14.jpeg", label: "🔍 Discovery", title: "Unlocking Hidden Potential" },
+  { image: "/images/new-16.jpeg", label: "🤝 Trust", title: "Partnerships Built On Faith" },
 ];
 
 export default function OpportunitiesSection() {
   return (
-    <section className="py-12 md:py-20 lg:py-28 px-4 md:px-6 bg-muted">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-3 md:mb-4">
-            ⚡ What Excites Us
-          </p>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
-            The Emotions Behind Every Opportunity
-          </h2>
-          <div className="divider-gold mb-4 md:mb-6" />
-        </div>
+    <section className="bg-muted">
+      <div className="py-8 md:py-12 text-center px-4">
+        <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-2">
+          What Excites Us
+        </p>
+        <h2 className="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          The Emotions Behind Every Opportunity
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {opportunities.map((item, index) => (
-            <div
-              key={index}
-              className="card-luxury group text-center overflow-hidden p-0"
-            >
-              {/* Image Header */}
-              <div className="relative h-40 md:h-48 w-full overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-gold/90 flex items-center justify-center backdrop-blur-sm">
-                    <item.icon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary-foreground" />
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-4 md:p-6 lg:p-8">
-                <p className="text-gold text-xs font-semibold tracking-wider mb-2">
-                  {item.emotion}
-                </p>
-                <h3 className="font-serif text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-3 md:mb-4">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        {opportunities.map((item, i) => (
+          <div key={i} className="relative aspect-[4/3] overflow-hidden group">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+              <p className="text-gold text-xs font-semibold tracking-wider mb-1">{item.label}</p>
+              <h3 className="font-serif text-lg md:text-2xl font-bold text-white drop-shadow-lg">{item.title}</h3>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
