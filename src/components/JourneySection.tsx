@@ -1,40 +1,72 @@
-const journeySlides = [
-  { image: "/images/new-33.jpeg", label: "🏗️ The Passion", title: "We Build With Our Heart" },
-  { image: "/images/new-40.jpeg", label: "✨ The Pride", title: "Creations That Make Us Proud" },
-  { image: "/images/new-12.jpeg", label: "🌆 The Dream", title: "We Dream In Skylines" },
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
+const journeyItems = [
+  {
+    number: "01",
+    title: "Premium Structures",
+    description: "High-end residential and commercial developments with uncompromising standards",
+    image: "/images/new-33.jpeg",
+  },
+  {
+    number: "02",
+    title: "Signature Landscapes",
+    description: "Golf courses, water bodies, waterfalls, and premium landscape architecture",
+    image: "/images/new-40.jpeg",
+  },
+  {
+    number: "03",
+    title: "Highest & Best Use",
+    description: "Macro-to-micro analysis for optimal land development strategy",
+    image: "/images/new-12.jpeg",
+  },
 ];
 
 export default function JourneySection() {
-  return (
-    <section className="bg-background">
-      {/* Section Header */}
-      <div className="py-8 md:py-12 text-center px-4">
-        <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-2">
-          Our Emotional Journey
-        </p>
-        <h2 className="font-serif text-2xl md:text-4xl lg:text-5xl font-bold text-foreground">
-          Built With Passion, Driven By Purpose
-        </h2>
-      </div>
+  const { ref, isVisible } = useScrollAnimation();
 
-      {/* Full-width image slides */}
-      <div className="grid grid-cols-1 md:grid-cols-3">
-        {journeySlides.map((slide, i) => (
-          <div key={i} className="relative aspect-[4/3] overflow-hidden group">
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-              decoding="async"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-              <p className="text-gold text-xs font-semibold tracking-wider mb-1">{slide.label}</p>
-              <h3 className="font-serif text-lg md:text-xl font-bold text-white drop-shadow-lg">{slide.title}</h3>
+  return (
+    <section className="py-16 md:py-24 lg:py-32 bg-background overflow-hidden">
+      <div ref={ref} className="max-w-7xl mx-auto px-4 md:px-6">
+        {/* Header */}
+        <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <p className="text-gold text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-3">
+            Luxury Construction
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            A Journey Through Excellence
+          </h2>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
+            Extensive on-ground experience with premium developers in DLF and the Delhi NCR region, where luxury construction means creating out-of-the-world experiences, not just buildings.
+          </p>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {journeyItems.map((item, i) => (
+            <div
+              key={i}
+              className={`group relative rounded-2xl overflow-hidden border border-gold/20 hover:border-gold/50 transition-all duration-700 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+              }`}
+              style={{ transitionDelay: `${(i + 1) * 200}ms` }}
+            >
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <span className="text-gold/50 font-serif text-4xl font-bold">{item.number}</span>
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-white mt-1 mb-2">{item.title}</h3>
+                <p className="text-white/70 text-sm leading-relaxed">{item.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

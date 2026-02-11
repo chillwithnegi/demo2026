@@ -5,10 +5,11 @@ import JourneySection from "@/components/JourneySection";
 import PrecisionSection from "@/components/PrecisionSection";
 import PhilosophySection from "@/components/PhilosophySection";
 import SolutionsSection from "@/components/SolutionsSection";
+import ApproachSection from "@/components/ApproachSection";
 import LandmarkSection from "@/components/LandmarkSection";
 import InvestmentSection from "@/components/InvestmentSection";
 import OpportunitiesSection from "@/components/OpportunitiesSection";
-import ApproachSection from "@/components/ApproachSection";
+import StrategicApproach from "@/components/StrategicApproach";
 import ServicesSection from "@/components/ServicesSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import FounderSection from "@/components/FounderSection";
@@ -27,10 +28,11 @@ const Index = () => {
         <PrecisionSection />
         <PhilosophySection />
         <SolutionsSection />
+        <ApproachSection />
         <LandmarkSection />
         <InvestmentSection />
         <OpportunitiesSection />
-        <ApproachSection />
+        <StrategicApproach />
         <ServicesSection />
         <ExpertiseSection />
         <FounderSection />
